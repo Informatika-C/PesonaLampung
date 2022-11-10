@@ -6,21 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        VANTA.BIRDS({
+          el: '#vanta',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 3.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color1: 0x0,
+          color2: 0x0,
+          wingSpan: 80.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          quantity: 3.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector('main');
+          main.style.opacity = 1;
+          main.style.filter = 'blur(0px)';
+        }, 1000);
+      });
+    </script>
   </head>
   <body>
-    <div class="navbar">
-      <nav class="sticky">
-        <ul>
-          <li class="logo">
-            <a href="#">Pesona Lampung</a>
-          </li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Rekomendasi</a></li>
-          <li><a href="#menu">Galeri</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#menu">ID</a></li>
-        </ul>
-      </nav>
+    <div id="vanta">
+      <h1 class="welcome">Pesona Lampung</h1>
     </div>
+    <nav class="sticky">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="#">Pesona Lampung</a>
+        </li>
+        <li><a href="#home">Utama</a></li>
+        <li><a href="#menu">Rekomendasi</a></li>
+        <li><a href="#menu">Galeri</a></li>
+        <li class="dropbox">
+          <a href="#menu" class="drophov">IDN</a>
+          <div class="dropdown">
+            <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+            <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+            <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+          </div>
+        </li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <!--Content-->
+    <section id="home">
+      <div class="container" style="font-size: 18px">
+        <h2>Pesona Lampung</h2>
+      </div>
+    </section>
+
+    <section>
+      <div>content</div>
+    </section>
+    <!--Content-->
   </body>
 </html>
