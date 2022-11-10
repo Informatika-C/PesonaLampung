@@ -226,7 +226,7 @@ img {
   transition: 0.3s;
 }
 
-.card-img:hover{
+.card-item:hover .card-img{
   height: 120%;
   left: -70%;
   cursor: pointer;
