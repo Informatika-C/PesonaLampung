@@ -193,6 +193,7 @@ img {
   }
 }
 
+/* Card Image */
 .card-container{
   padding: 1em;
   display: grid;
@@ -253,6 +254,24 @@ img {
   left: 10px;
   color: white;
 }
+/* Card Image */
+
+
+/* Navbar Phone */
+.navbar-phone {
+  display: none;
+  gap: 0;
+}
+
+.navbar-phone .logo {
+  text-align: center;
+  width: 100%;
+}
+
+.burger-menu-buttom:hover {
+  cursor: pointer;
+}
+/* Navbar Phone */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -263,10 +282,44 @@ img {
   }
 }
 
+/* For Tablet: */
+@media only screen and (max-width: 900px) {
+  .logo{
+    padding-right: 5em;
+  }
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .card-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav > ul > li{
+    display: none;
+  }
+
+  nav > ul > .dropbox{
+    display: none;
+  }
+
+  nav > ul {
+    padding-right: 5em;
+    justify-content: left;
+  }
+
+  .navbar-phone{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-phone li{
+    display: block;
+  }
+
+  .logo {
+    padding-right: 0em;
   }
 }
