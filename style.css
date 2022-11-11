@@ -231,3 +231,29 @@ img {
   left: -70%;
   cursor: pointer;
 }
+
+.bottom-shadow:after{
+  content: "";
+  position: absolute;
+  top: 110px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
+}
+
+.top-shadow:after{
+  content: "";
+  position: absolute;
+  top: -180px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0), black);
+}
+
+.card-text-bottom{
+  position: absolute;
+  z-index: 99; 
+  bottom: 10px; 
+  left: 10px;
+  color: white;
+}
