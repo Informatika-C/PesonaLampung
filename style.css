@@ -203,14 +203,15 @@ img {
 }
 
 .card-container{
-  height: 19em; 
   padding: 1em;
-  display: flex;
-  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .card-item {
-  width: calc((100% / 7));
+  height: 19em; 
+  width: 100%;
   border-radius: 0.5em;
   margin-right: 1em;
   overflow: hidden;
