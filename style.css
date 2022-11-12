@@ -48,6 +48,25 @@ a {
   box-shadow: rgb(28 32 93 / 30%) 1px 4px 2px 0px;
 }
 /*Navbar Setting End*/
+
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #dcdcdccc;
+  z-index: 9999;
+  transition: right 0.5s ease;
+}
+
+.active-side-menu{
+  right: -50%;
+}
+/* Side Menu */
+
 section {
   padding-top: 5em;
 }
