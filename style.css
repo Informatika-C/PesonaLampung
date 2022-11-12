@@ -67,10 +67,14 @@ a {
 }
 
 .exit-button-container{
+  padding: 1em;
   width: 100%;
-  background-color: red;
   display: flex;
   justify-content: flex-end;
+}
+
+.exit-button:hover{
+  cursor: pointer;
 }
 /* Side Menu */
 
