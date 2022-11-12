@@ -55,7 +55,7 @@ a {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 100%;
+  width: 70%;
   height: 100vh;
   background-color: #dcdcdccc;
   z-index: 9999;
@@ -63,7 +63,14 @@ a {
 }
 
 .active-side-menu{
-  right: -30%;
+  right: -0%;
+}
+
+.exit-button-container{
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: flex-end;
 }
 /* Side Menu */
 
