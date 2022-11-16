@@ -25,7 +25,7 @@
           wingSpan: 80.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          quantity: 3.0,
+          quantity: 2.0,
         });
 
         setTimeout(() => {
@@ -39,7 +39,7 @@
   <body>
 
     <div id="vanta">
-      <h1 class="welcome">Pesona Lampung</h1>
+      <h1  id="home"class="welcome">Pesona Lampung</h1>
     </div>
 
     <nav class="sticky">
@@ -47,8 +47,8 @@
         <li class="logo">
           <a href="#">Pesona Lampung</a>
         </li>
-        <li><a href="#home">Utama</a></li>
-        <li><a href="#menu">Rekomendasi</a></li>
+        <li><a href="#vanta">Utama</a></li>
+        <li><a href="#recoment">Rekomendasi</a></li>
         <li><a href="#menu">Galeri</a></li>
         <li class="dropbox">
           <a href="#menu" class="drophov">IDN</a>
@@ -61,7 +61,7 @@
         <li><a href="#">Kontak</a></li>
 
         <!-- Mobile -->
-        <div class="navbar-phone">
+        <div id="home" class="navbar-phone">
           <li class="logo">
             <a href="#">Pesona Lampung</a>
           </li>
@@ -71,12 +71,9 @@
             </svg>
           </div>
         </div>
-      <!-- Mobile -->
-
+        
       </ul>
     </nav>
-
-    <!-- Mobile -->
     <!-- Side-Menu -->
     <div class="side-menu">
       <div class="exit-button-container">
@@ -87,8 +84,8 @@
         </div>
       </div>
       <ul class="side-menu-list">
-        <li><a href="#home">Utama</a></li>
-        <li><a href="#menu">Rekomendasi</a></li>
+        <li><a href="#vanta">Utama</a></li>
+        <li><a href="#recoment">Rekomendasi</a></li>
         <li><a href="#menu">Galeri</a></li>
         <li><a href="#menu">IDN</a></li>
         <li><a href="#">Kontak</a></li>
@@ -97,13 +94,7 @@
     <!-- Mobile -->
 
     <!--Content-->
-    <section id="home">
-      <div class="container" style="font-size: 18px">
-        <h2>Pesona Lampung</h2>
-      </div>
-    </section>
-
-    <section>
+    <section id="recoment">
       <!-- Card Image -->
       <div class="card-container">
         <!-- start card-item -->
@@ -263,8 +254,8 @@
         </div>
         <!-- end card-item -->
       </div>
-    <!-- Card Image -->
     </section>
+    <!-- Card Image -->
     <!--Content-->
 
     <!-- script -->
