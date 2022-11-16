@@ -48,6 +48,48 @@ a {
   box-shadow: rgb(28 32 93 / 30%) 1px 4px 2px 0px;
 }
 /*Navbar Setting End*/
+
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #dcdcdc55;
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  transition: right 0.5s ease;
+}
+
+.active-side-menu{
+  right: -0%;
+}
+
+.exit-button-container{
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exit-button:hover{
+  cursor: pointer;
+}
+
+.side-menu-list > li{
+  list-style-type:none;
+  margin-bottom: 20px;
+}
+
+.side-menu-list > li > a{
+  color: #000;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+/* Side Menu */
+
 section {
   padding-top: 5em;
 }
@@ -193,6 +235,7 @@ img {
   }
 }
 
+/* Card Image */
 .card-container{
   padding: 1em;
   display: grid;
@@ -253,6 +296,32 @@ img {
   left: 10px;
   color: white;
 }
+/* Card Image */
+
+
+/* Navbar Phone */
+.navbar-phone {
+  display: none;
+  gap: 0;
+}
+
+.navbar-phone .logo {
+  text-align: center;
+  width: 100%;
+}
+
+.burger-menu-button{
+  padding: 0.1em;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.44);
+  border-width: 0.17em;
+  border-radius: 0.3em;
+}
+
+.burger-menu-button:hover {
+  cursor: pointer;
+}
+/* Navbar Phone */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -263,10 +332,44 @@ img {
   }
 }
 
+/* For Tablet: */
+@media only screen and (max-width: 900px) {
+  .logo{
+    padding-right: 5em;
+  }
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .card-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav > ul > li{
+    display: none;
+  }
+
+  nav > ul > .dropbox{
+    display: none;
+  }
+
+  nav > ul {
+    padding-right: 5em;
+    justify-content: left;
+  }
+
+  .navbar-phone{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-phone li{
+    display: block;
+  }
+
+  .logo {
+    padding-right: 0em;
   }
 }
