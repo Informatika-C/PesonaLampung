@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pantai</title>
+</head>
+<body>
+    <div id="satu">
+        <h1  id="home" class="bg1">Satu</h1>
+    </div>
+  
+      <nav class="sticky">
+        <ul class="navbar">
+          <li class="logo">
+            <a href="#"><img src="/image/1.png" alt="Profile" width="100"></a>
+          </li>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="index.html#recoment">Rekomendasi</a></li>
+          <li><a href="#menu">Galeri</a></li>
+          <li class="dropbox">
+            <a href="#menu" class="drophov">IDN</a>
+            <div class="dropdown">
+              <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+              <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+              <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+            </div>
+          </li>
+          <li><a href="#">Kontak</a></li>
+  
+          <!-- Mobile -->
+          <div id="home" class="navbar-phone">
+            <li class="logo">
+              <a href="#">Pesona Lampung</a>
+            </li>
+            <div class="burger-menu-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </div>
+          </div>
+          
+        </ul>
+      </nav>
+      <!-- Side-Menu -->
+      <div class="side-menu">
+        <div class="exit-button-container">
+          <div class="exit-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="side-menu-list">
+          <li><a href="#vanta">Utama</a></li>
+          <li><a href="#recoment">Rekomendasi</a></li>
+          <li><a href="#menu">Galeri</a></li>
+          <li><a href="#menu">IDN</a></li>
+          <li><a href="#">Kontak</a></li>
+      </div>
+      <!-- Side-Menu -->
+      <!-- Mobile -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <Script>
+        var url_string = window.location.href
+        var url = new URL(url_string);
+        var data = url.searchParams.get("nama");
+        
+        if(data == "satu"){
+          $("#home").html("Satu")
+          $("#satu").css("background-image", "url(./image/bg-1.jpg)")
+        }
+
+        else if(data == "dua"){
+          $("#home").html("Dua")
+          $("#satu").css("background-image", "url(./image/bg-2.jpg)")
+        }
+    </Script>
+</body>
+</html>
