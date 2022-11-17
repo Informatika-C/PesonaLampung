@@ -302,10 +302,7 @@ img {
   cursor: pointer;
   box-shadow: -5px 7px 5px #4b4b4b;
 }
-div.card-container {
-  overflow: auto;
-  white-space: wrap;
-}
+
 .card-img {
   position: absolute;
   height: 100%;
