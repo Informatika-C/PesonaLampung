@@ -14,6 +14,34 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: aliceblue;
+}
+.welcome {
+  text-align: center;
+  color: aliceblue;
+  background: linear-gradient(-45deg, #232dbf, #7f78e1, #ffffff, #e889ad, #6f9a20b5, #484241d0);
+  background-size: 300%;
+  font-size: 45px;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 4s ease-in-out infinite;
+  -moz-animation: animated_text 6s ease-in-out infinite;
+  -webkit-animation: animated_text 6s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 #vanta {
   width: 100%;
@@ -48,6 +76,8 @@ a {
   padding-left: 3em;
   border-radius: 0px 0px 5px 5px;
   background-color: rgba(206, 195, 195, 0.267);
+  backdrop-filter: blur(5px) saturate(90%) contrast(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(160%) contrast(180%);
   box-shadow: rgb(28 32 93 / 30%) 1px 4px 2px 0px;
 }
 /*Navbar Setting End*/
@@ -57,10 +87,12 @@ a {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 70%;
+  width: 50%;
+  font-size: 0.8em;
   height: 100vh;
   background-color: #dcdcdc55;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px) saturate(80%) contrast(150%);
+  -webkit-backdrop-filter: blur(5px) saturate(80%) contrast(150%);
   z-index: 9999;
   transition: right 0.5s ease;
 }
@@ -71,7 +103,7 @@ a {
 
 .exit-button-container {
   padding: 1em;
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: flex-end;
 }
@@ -87,8 +119,19 @@ a {
 
 .side-menu-list > li > a {
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-decoration: none;
+}
+.side-menu-list > li:hover {
+  transition: right 2s ease-in;
+  border-bottom: solid 1.5px black;
+}
+.logo-list {
+  position: absolute;
+  top: 98%;
+  left: 90%;
+  transform: translate(-90%, -98%);
+  list-style: none;
 }
 /* Side Menu */
 
@@ -101,7 +144,7 @@ li a,
   display: inline-block;
 }
 li a:hover {
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   color: rgb(246, 48, 48);
 }
 li .dropbox {
@@ -259,7 +302,10 @@ img {
   cursor: pointer;
   box-shadow: -5px 7px 5px #4b4b4b;
 }
-
+div.card-container {
+  overflow: auto;
+  white-space: nowrap;
+}
 .card-img {
   position: absolute;
   height: 100%;
@@ -303,7 +349,7 @@ img {
 /* Navbar Phone */
 .navbar-phone {
   display: none;
-  gap: 0;
+  gap: 10rem;
 }
 
 .navbar-phone .logo {

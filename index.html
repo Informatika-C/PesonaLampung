@@ -9,9 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener('DOMContentLoaded', () => {
         VANTA.BIRDS({
-          el: "#vanta",
+          el: '#vanta',
           mouseControls: true,
           touchControls: true,
           gyroControls: true,
@@ -29,17 +29,16 @@
         });
 
         setTimeout(() => {
-          const main = document.querySelector("main");
+          const main = document.querySelector('main');
           main.style.opacity = 1;
-          main.style.filter = "blur(0px)";
+          main.style.filter = 'blur(0px)';
         }, 1000);
       });
     </script>
   </head>
   <body>
-
     <div id="vanta">
-      <h1  id="home"class="welcome">SELAMAT DATANG!</h1>
+      <h1 id="home" class="welcome">SELAMAT DATANG!</h1>
     </div>
 
     <nav class="sticky">
@@ -67,11 +66,10 @@
           </li>
           <div class="burger-menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </div>
         </div>
-        
       </ul>
     </nav>
     <!-- Side-Menu -->
@@ -79,7 +77,7 @@
       <div class="exit-button-container">
         <div class="exit-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
           </svg>
         </div>
       </div>
@@ -89,28 +87,33 @@
         <li><a href="#menu">Galeri</a></li>
         <li><a href="#menu">IDN</a></li>
         <li><a href="#">Kontak</a></li>
+      </ul>
+      <li class="logo-list">
+        <a href="#"><img src="/image/1.png" alt="Profile" width="70" /></a>
+      </li>
     </div>
     <!-- Side-Menu -->
-    <!-- Mobile -->
+    <!-- Mobile End-->
 
     <!--Content-->
     <section id="recoment">
       <!-- Card Image -->
+      <h1 style="color: black">PANTAI</h1>
       <div class="card-container">
         <!-- start card-item -->
         <a href="content.html?nama=satu">
-        <div class="card-item" id="pantai">
-          <div class="top-shadow">
-            <div class="bottom-shadow">
-              <img class="card-img" src="image/bukit kumbang bakau.jpeg" alt="bg" />
+          <div class="card-item" id="pantai">
+            <div class="top-shadow">
+              <div class="bottom-shadow">
+                <img class="card-img" src="image/bg-1.jpg" alt="bg" />
 
-              <div class="card-text-top" style="position: absolute; z-index: 99; top: 10px; left: 10px; color: white">Bukit Kumbang</div>
+                <div class="card-text-top" style="position: absolute; z-index: 99; top: 10px; left: 10px; color: white">Wisata Pantai</div>
 
-              <div class="card-text-bottom">Bukit Kumbang, Bakauheni</div>
+                <div class="card-text-bottom">Menikmati Wisata Pantai</div>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
         <!-- end card-item -->
         <!-- start card-item -->
         <a href="content.html?nama=dua">
@@ -265,12 +268,12 @@
     <!-- script -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
-    $(".burger-menu-button").click(function(){
-      $(".side-menu").toggleClass("active-side-menu");
-    });
-    $(".exit-button").click(function(){
-      $(".side-menu").toggleClass("active-side-menu");
-    });
+      $('.burger-menu-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
+      });
+      $('.exit-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
+      });
     </script>
     <!-- script -->
   </body>
