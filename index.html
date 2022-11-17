@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./image/bg-3.jpg" as="image" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Pesona Lampung</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener('DOMContentLoaded', () => {
         VANTA.BIRDS({
-          el: "#vanta",
+          el: '#vanta',
           mouseControls: true,
           touchControls: true,
           gyroControls: true,
@@ -29,9 +30,9 @@
         });
 
         setTimeout(() => {
-          const main = document.querySelector("main");
+          const main = document.querySelector('main');
           main.style.opacity = 1;
-          main.style.filter = "blur(0px)";
+          main.style.filter = 'blur(0px)';
         }, 1000);
       });
     </script>
@@ -42,7 +43,7 @@
     </div>
 
     <nav class="sticky">
-      <ul class="navbar">
+      <ul>
         <li class="logo">
           <a href="#"><img src="./image/1.png" alt="Profile" width="100" /></a>
         </li>
@@ -286,13 +287,28 @@
     <!--Content-->
 
     <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
-      $(".burger-menu-button").click(function () {
-        $(".side-menu").toggleClass("active-side-menu");
+      $(document).ready(function () {
+        $(window).bind('scroll', function () {
+          $('nav').css('background-color', 'rgba(0, 0, 0, 0.000)');
+          $('.active').fadeIn('slow', 6000);
+          var gap = 100;
+          if ($(window).scrollTop() > gap) {
+            $('nav').addClass('active');
+          } else {
+            $('nav').removeClass('active');
+          }
+        });
       });
-      $(".exit-button").click(function () {
-        $(".side-menu").toggleClass("active-side-menu");
+    </script>
+    <script>
+      $('.burger-menu-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
+      });
+      $('.exit-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
       });
     </script>
     <!-- script -->
