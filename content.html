@@ -1,132 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./image/bukit_kumbang_bakau.png" as="image" />
     <link rel="stylesheet" href="style.css" />
     <title>Pantai</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="satu">
-        <h1  id="home" class="bg1">Satu</h1>
+      <h1 id="home" class="bg1">Satu</h1>
     </div>
-  
-      <nav class="sticky">
-        <ul class="navbar">
-          <li class="logo">
-            <a href="#"><img src="./image/1.png" alt="Profile" width="100"></a>
-          </li>
-          <li><a href="index.html">Utama</a></li>
-          <li><a href="index.html#recoment">Rekomendasi</a></li>
-          <li><a href="#menu">Galeri</a></li>
-          <li class="dropbox">
-            <a href="#menu" class="drophov">IDN</a>
-            <div class="dropdown">
-              <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
-              <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
-              <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
-            </div>
-          </li>
-          <li><a href="#">Kontak</a></li>
-  
-          <!-- Mobile -->
-          <div id="home" class="navbar-phone">
-            <li class="logo">
-              <a href="#">Pesona Lampung</a>
-            </li>
-            <div class="burger-menu-button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </div>
+
+    <nav class="sticky">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="#"><img src="./image/1.png" alt="Profile" width="100" /></a>
+        </li>
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="index.html#recoment">Rekomendasi</a></li>
+        <li><a href="#menu">Galeri</a></li>
+        <li class="dropbox">
+          <a href="#menu" class="drophov">IDN</a>
+          <div class="dropdown">
+            <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+            <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+            <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
           </div>
-          
-        </ul>
-      </nav>
-      <!-- Side-Menu -->
-      <div class="side-menu">
-        <div class="exit-button-container">
-          <div class="exit-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </li>
+        <li><a href="#">Kontak</a></li>
+
+        <!-- Mobile -->
+        <div id="home" class="navbar-phone">
+          <li class="logo">
+            <a href="#">Pesona Lampung</a>
+          </li>
+          <div class="burger-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </div>
         </div>
-        <ul class="side-menu-list">
-          <li><a href="#vanta">Utama</a></li>
-          <li><a href="#recoment">Rekomendasi</a></li>
-          <li><a href="#menu">Galeri</a></li>
-          <li><a href="#menu">IDN</a></li>
-          <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <!-- Side-Menu -->
+    <div class="side-menu">
+      <div class="exit-button-container">
+        <div class="exit-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </div>
       </div>
-      <!-- Side-Menu -->
-      <!-- Mobile -->
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <Script>
-        var url_string = window.location.href
-        var url = new URL(url_string);
-        var data = url.searchParams.get("nama");
-        
-        if(data == "satu"){
-          $("#home").html("Satu")
-          $("#satu").css("background-image", "url(./image/bukit_kumbang_bakau.png)")
-        }
+      <ul class="side-menu-list">
+        <li><a href="#vanta">Utama</a></li>
+        <li><a href="#recoment">Rekomendasi</a></li>
+        <li><a href="#menu">Galeri</a></li>
+        <li><a href="#menu">IDN</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+    <!-- Side-Menu -->
+    <!-- Mobile -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).bind('scroll', function () {
+          $('nav').css('background-color', 'rgba(0, 0, 0, 0.000)');
+          $('.active').fadeIn('slow', 6000);
+          var gap = 100;
+          if ($(window).scrollTop() > gap) {
+            $('nav').addClass('active');
+          } else {
+            $('nav').removeClass('active');
+          }
+        });
+      });
+    </script>
+    <script>
+      $('.burger-menu-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
+      });
+      $('.exit-button').click(function () {
+        $('.side-menu').toggleClass('active-side-menu');
+      });
+    </script>
+    <script>
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var data = url.searchParams.get('nama');
 
-        else if(data == "dua"){
-          $("#home").html("Dua")
-          $("#satu").css("background-image", "url(./image/Air_Terjun_Batu_Putu.png)")
-        }
-
-        else if(data == "tiga"){
-          $("#home").html("tiga")
-          $("#satu").css("background-image", "url(./image/Air-Terjun-Putri-Malu.jpg)")
-        }
-
-        else if(data == "empat"){
-          $("#home").html("empat")
-          $("#satu").css("background-image", "url(./image/Air-Terjun-Way-Lalaan.jpg)")
-        }
-
-        else if(data == "lima"){
-          $("#home").html("lima")
-          $("#satu").css("background-image", "url(./image/Bendungan_Batu_Tegi.jpg)")
-        }
-
-        else if(data == "enam"){
-          $("#home").html("enam")
-          $("#satu").css("background-image", "url(./image/curupgangsa.jpg)")
-        }
-
-        else if(data == "tujuh"){
-          $("#home").html("tujuh")
-          $("#satu").css("background-image", "url(./image/danauranau.jpg)")
-        }
-
-        else if(data == "delapan"){
-          $("#home").html("delapan")
-          $("#satu").css("background-image", "url(./image/hutan_pinus_lampung_barat.jpg)")
-        }
-
-        else if(data == "sembilan"){
-          $("#home").html("sembilan")
-          $("#satu").css("background-image", "url(./image/kedu_warna.jpg)")
-        }
-
-        else if(data == "sepuluh"){
-          $("#home").html("sepuluh")
-          $("#satu").css("background-image", "url(./image/lembahhijau.jpg)")
-        }
-
-        else if(data == "sebelas"){
-          $("#home").html("sebelas")
-          $("#satu").css("background-image", "url(./image/menara_siger.jpg)")
-        }
-
-        else if(data == "duabelas"){
-          $("#home").html("duabelas")
-          $("#satu").css("background-image", "url(./image/Muncak-Teropong-Laut.jpg)")
-        }
-    </Script>
-</body>
+      if (data == 'satu') {
+        $('#home').html('Satu');
+        $('#satu').css('background-image', 'url(./image/bukit_kumbang_bakau.png)');
+      } else if (data == 'dua') {
+        $('#home').html('Dua');
+        $('#satu').css('background-image', 'url(./image/Air_Terjun_Batu_Putu.png)');
+      } else if (data == 'tiga') {
+        $('#home').html('tiga');
+        $('#satu').css('background-image', 'url(./image/Air-Terjun-Putri-Malu.jpg)');
+      } else if (data == 'empat') {
+        $('#home').html('empat');
+        $('#satu').css('background-image', 'url(./image/Air-Terjun-Way-Lalaan.jpg)');
+      } else if (data == 'lima') {
+        $('#home').html('lima');
+        $('#satu').css('background-image', 'url(./image/Bendungan_Batu_Tegi.jpg)');
+      } else if (data == 'enam') {
+        $('#home').html('enam');
+        $('#satu').css('background-image', 'url(./image/curupgangsa.jpg)');
+      } else if (data == 'tujuh') {
+        $('#home').html('tujuh');
+        $('#satu').css('background-image', 'url(./image/danauranau.jpg)');
+      } else if (data == 'delapan') {
+        $('#home').html('delapan');
+        $('#satu').css('background-image', 'url(./image/hutan_pinus_lampung_barat.jpg)');
+      } else if (data == 'sembilan') {
+        $('#home').html('sembilan');
+        $('#satu').css('background-image', 'url(./image/kedu_warna.jpg)');
+      } else if (data == 'sepuluh') {
+        $('#home').html('sepuluh');
+        $('#satu').css('background-image', 'url(./image/lembahhijau.jpg)');
+      } else if (data == 'sebelas') {
+        $('#home').html('sebelas');
+        $('#satu').css('background-image', 'url(./image/menara_siger.jpg)');
+      } else if (data == 'duabelas') {
+        $('#home').html('duabelas');
+        $('#satu').css('background-image', 'url(./image/Muncak-Teropong-Laut.jpg)');
+      }
+    </script>
+  </body>
 </html>
