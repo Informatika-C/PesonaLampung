@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="./image/bukit_kumbang_bakau.png" as="image" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pantai</title>
+    <title></title>
   </head>
   <body>
     <div id="content-background">
@@ -90,43 +90,55 @@
     <script>
       var url_string = window.location.href;
       var url = new URL(url_string);
-      var data = url.searchParams.get('nama');
+      var id = url.searchParams.get('id');
 
-      if (data == 'satu') {
+      if (id == 1) {
         $('#judul').html('Satu');
+        document.title = 'Bukit Kumbang';
         $('#content-background').css('background-image', 'url(./image/bukit_kumbang_bakau.png)');
-      } else if (data == 'dua') {
+      } else if (id == 2) {
         $('#judul').html('Dua');
+        document.title = 'Air Terjun Batu Putu'
         $('#content-background').css('background-image', 'url(./image/Air_Terjun_Batu_Putu.png)');
-      } else if (data == 'tiga') {
+      } else if (id == 3) {
         $('#judul').html('tiga');
+        document.title = 'Air Terjun Putri Malu'
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Putri-Malu.jpg)');
-      } else if (data == 'empat') {
+      } else if (id == 4) {
         $('#judul').html('empat');
+        document.title = 'Air Terjun Way Lalaan'
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Way-Lalaan.jpg)');
-      } else if (data == 'lima') {
+      } else if (id == 5) {
         $('#judul').html('lima');
+        document.title = 'Bendungan Batu Tegi'
         $('#content-background').css('background-image', 'url(./image/Bendungan_Batu_Tegi.jpg)');
-      } else if (data == 'enam') {
+      } else if (id == 6) {
         $('#judul').html('enam');
+        document.title = 'Air Terjun Gangsa'
         $('#content-background').css('background-image', 'url(./image/curupgangsa.jpg)');
-      } else if (data == 'tujuh') {
+      } else if (id == 7) {
+        document.title = 'Danau Ranau'
         $('#judul').html('tujuh');
         $('#content-background').css('background-image', 'url(./image/danauranau.jpg)');
-      } else if (data == 'delapan') {
+      } else if (id == 8) {
         $('#judul').html('delapan');
+        document.title = 'Hutan Pinus'
         $('#content-background').css('background-image', 'url(./image/hutan_pinus_lampung_barat.jpg)');
-      } else if (data == 'sembilan') {
+      } else if (id == 9) {
         $('#judul').html('sembilan');
+        document.title = 'Pantai Kedu Warna'
         $('#content-background').css('background-image', 'url(./image/kedu_warna.jpg)');
-      } else if (data == 'sepuluh') {
+      } else if (id == 10) {
         $('#judul').html('sepuluh');
+        document.title = 'Lembah Hijau'
         $('#content-background').css('background-image', 'url(./image/lembahhijau.jpg)');
-      } else if (data == 'sebelas') {
+      } else if (id == 11) {
         $('#judul').html('sebelas');
+        document.title = 'Menara Siger'
         $('#content-background').css('background-image', 'url(./image/menara_siger.jpg)');
-      } else if (data == 'duabelas') {
+      } else if (id == 12) {
         $('#judul').html('duabelas');
+        document.title = 'Muncak Teropong Laut'
         $('#content-background').css('background-image', 'url(./image/Muncak-Teropong-Laut.jpg)');
       }
     </script>
