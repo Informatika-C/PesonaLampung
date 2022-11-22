@@ -481,9 +481,8 @@ p {
   left: 10%;
   transform: translate(-10%, -20%);
 }
-#satu {
+#content-background {
   width: 100%;
   height: 100vh;
-  background-image: url(./image/bukit_kumbang_bakau.png);
   background-size: cover;
 }
