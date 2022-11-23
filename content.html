@@ -12,8 +12,8 @@
     <div id="content-background">
       <div class="card-center-container">
         <div class="card-content glass">
-          <h1 id="judul" class="bg1">Satu</h1>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, harum! Unde, laudantium ratione, cum ut adipisci fuga soluta quis iste porro quam animi provident assumenda, voluptas quasi non quas ipsa commodi. Suscipit aliquid fugiat delectus magnam officia temporibus corrupti nobis? A rem, eaque officiis veniam dolor voluptatem, excepturi natus soluta veritatis nisi doloribus! Repellat ipsam velit soluta quaerat eaque excepturi, earum quidem minima provident unde vel officiis culpa qui animi cum doloribus veritatis ab ea explicabo sequi voluptate asperiores distinctio corrupti! Quam, quisquam tempore. Velit error pariatur tenetur recusandae. Nobis repellendus enim explicabo ullam magnam ipsa deleniti quibusdam officiis voluptatibus?</div>
+          <h1 id="judul" class="bg1" style="font-size: 2em"></h1>
+          <p id="isi" style="text-align: justify"></p>
         </div>
       </div>
     </div>
@@ -98,52 +98,88 @@
       var id = url.searchParams.get('id');
 
       if (id == 1) {
-        $('#judul').html('Satu');
+        $('#judul').html('Kuil kumbang');
+        $('#isi').html(
+          'Sebuah kuil milik sepasang suami istri bersuku Tionghoa dari Cilegon berada di puncak Bukit Kumbang di Kecamatan Bakauheni Kabupaten Lampung Selatan. Keindahannya mengundang banyak orang untuk berkunjung meskipun kuil tersebut dikelola secara pribadi. Pengunjung harus mendaki dengan medan yang cukup curam karena terletak di puncak bukit. Lelahnya perjalanan akan terbayarkan dengan pemandangan birunya laut dari atas bukit.<br><br>Di sini juga banyak kamu jumpai spot foto untuk kamu jadikan latar belakang berfoto. Berkunjung ke tempat ini gratis, tanpa ada biaya sama sekali, namun dengan begitu kamu wajib menjaga kebersihan dan menghormati peraturan yang ada di sana.<br>'
+        );
         document.title = 'Bukit Kumbang';
         $('#content-background').css('background-image', 'url(./image/bukit_kumbang_bakau.png)');
       } else if (id == 2) {
-        $('#judul').html('Dua');
-        document.title = 'Air Terjun Batu Putu'
+        $('#judul').html('Air Terjun Batu Putu');
+        $('#isi').html(
+          'Air terjun ini berada di Desa Batu Putu, Kecamatan Teluk Betung Utara, Kota Bandar Lampung, Provinsi Lampung. Letaknya tak terlalu jauh dari pusat kota Teluk Betung, kurang lebih hanya memakan waktu 15 menit perjalanan saja, dan kurang lebih 45 menit dari Kota Bandar Lampung.<br>Air Terjun Batu Putu ini sangat cantik dengan udara sejuk serta panorama pegunungan yang tampak alami. Rentetan pepohonan besar nan rimbun menutupi perbukitan hijau di belakangnya mampu membuat siapa pun yang melihatnya terkesima. Suasananya pun menentramkan, hanya sunyi jauh dari hiruk pikuk perkotaan, meskipun letaknya cukup dekat dengan pusat kota. Daya tarik utamanya tentu air terjunnya yang masih alami dan tidak banyak dijamah manusia.'
+        );
+        document.title = 'Air Terjun Batu Putu';
         $('#content-background').css('background-image', 'url(./image/Air_Terjun_Batu_Putu.png)');
       } else if (id == 3) {
-        $('#judul').html('tiga');
-        document.title = 'Air Terjun Putri Malu'
+        $('#judul').html('Air Terjun Putri Malu');
+        $('#isi').html(
+          'Terletak di Kampung Juku Batu, Kecamatan Banjit, Kabupaten Way Kanan, Provinsi Lampung. Air Terjun Putri Malu memang benar-benar memiliki panorama keindahan alam yang luar biasa, Maka tak heran bahwa air terjun yang memiliki ketinggian sekitar 100 meter diatas permukaan laut ini menjadi salah satu produk wisata unggulan yang di miliki oleh kabupaten waykanan.<br>Tetes air yang jatuh itu, berbentuk melengkung menyerupai punggung manusia yang sedang mandi. Dan hal tersebutlah yang mendasari air terjun ini dinamakan “Putri Malu”. Dari namanya saja pasti sudah jelas terbayang betapa indahnya pesona air terjun yang satu ini. Air Terjun Putri Malu memang benar-benar cantik. Maka tak mengherankan jika banyak wisatawan yang tergila-gila dengan kecantikan air terjun yang satu ini. Ketika mendengar suara deburannya saja sudah segar, apa lagi jika sudah terkena air cipratannya secara langsung.'
+        );
+        document.title = 'Air Terjun Putri Malu';
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Putri-Malu.jpg)');
       } else if (id == 4) {
-        $('#judul').html('empat');
-        document.title = 'Air Terjun Way Lalaan'
+        $('#judul').html('Air Terjun Way Lalaan');
+        $('#isi').html(
+          'Air Terjun Way Lalaan, Air terjun yang berjarak hanya 8 Km dari Kotaagung, ibukota Kabupaten Tanggamus atau 80 Km atau 1,5 jam perjalanan dari Kota Bandar Lampung.Air Terjun Way Lalaan terletak di kaki Gunung Tanggamus dan merupakan air terjun bertingkat dengan jarak kurang lebih 200 m. Nama Air terjun ini berasal dalam bahasa Lampung dari kata “Way” yang artinya sungai dan Lalaan yang bermuara ke Teluk Semangka. Tumpahan air terjun ini memiliki ketinggian ± 11 m.<br>Air terjun yang di kenal sejak Tahun 1937 yaitu pada zaman pemerintahan Belanda yang ditandai telah membuat sebuah tangga yang terbuat dari semen menuju lembah air terjun. Air terjun Way Lalaan saat ini telah dikelola oleh Dinas Pariwisata Tanggamus. Warga sekitar memberi nama Air Terjun Way Lalaan 1 yang terletak di atas dan Air Terjun Way Lalaan 2 yang terletak bawah.'
+        );
+        document.title = 'Air Terjun Way Lalaan';
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Way-Lalaan.jpg)');
       } else if (id == 5) {
-        $('#judul').html('lima');
-        document.title = 'Bendungan Batu Tegi'
+        $('#judul').html('Bendungan Batu Tegi');
+        $('#isi').html(
+          'Bendungan Batu Tegi terletak di Pekon Batutegi, Kecamatan Air Naningan, Kabupaten Tanggamus, Lampung. Bendungan ini merupakan bendungan terbesar se Asia Tenggara. Memiliki luas sekitar 3.560 hektar bendungan ini juga Berada diantara dua bukit.<br>Bendungan Batu Tegi jaraknya kurang lebih 85 km dari Kota Bandar Lampung. Dari bendungan ini kita dapat melihat hamparan luas air yang menakjubkan. Pemandangan yang disuguhkan membuat penikmatnya berdecak kagum. Udara yang sejuk dan segar juga menambah keindahan tempat ini.<br>'
+        );
+        document.title = 'Bendungan Batu Tegi';
         $('#content-background').css('background-image', 'url(./image/Bendungan_Batu_Tegi.jpg)');
       } else if (id == 6) {
-        $('#judul').html('enam');
-        document.title = 'Air Terjun Gangsa'
+        $('#judul').html('Air Terjun Gangsa');
+        $('#isi').html(
+          'Curup Gangsa terletak di Kampung Kotaway, Kecamatan Kasui, Kabupaten Way Kanan, Lampung. Air terjun ini menjadi salah satu wisata andalan Way Kanan selain Air Terjun Putri Malu. Dari Bandar Lampung, lokasi wisata ini dapat ditempuh sekitar 4 hingga 5 jam melalui jalan Lintas Sumatera tengah. Lalu masuk lagi ke dalam menyusuri kampung-kampung dan beberapa perkebunan selama satu jam. Untuk melihat pemandangan atau hilir air terjun wisatawan harus menuruni beberapa anak tangga. Sekitar 100 meter dari hilir air terjun, ada area sungai yang dikelilingi batu yang bisa digunakan untuk berenang bersama keluarga.'
+        );
+        document.title = 'Air Terjun Gangsa';
         $('#content-background').css('background-image', 'url(./image/curupgangsa.jpg)');
       } else if (id == 7) {
-        document.title = 'Danau Ranau'
-        $('#judul').html('tujuh');
+        document.title = 'Danau Ranau';
+        $('#judul').html('Danau Ranau');
+        $('#isi').html(
+          'Danau Ranau terletak diperbatasan antara Provinsi Sumatera Selatan dan Provinsi Lampung. Tepatnya diperbatasan antara Kabupaten OKU Selatan dan Kabupaten Lampung Barat. Danau Ranau merupakan danau terbesar kedua di Sumatera, setelah Danau Toba. <br>Danau Ranau merupakan danau tektonik/danau vulkanik. Aliran utama danau berasal dari Sungai Warkuk dan aliran keluar menuju Sungai Selabung, yang merupakan salah satu anak Sungai  Komering. Dari, aliran sungai ini lah sumber utama untuk mengairi Daerah Irigasi Komering yang terletak di Kabupaten OKU Timur Provinsi Sumatera Selatan dan Kabupaten Way Kanan Provinsi Lampung.'
+        );
         $('#content-background').css('background-image', 'url(./image/danauranau.jpg)');
       } else if (id == 8) {
-        $('#judul').html('delapan');
-        document.title = 'Hutan Pinus'
+        $('#judul').html('Hutan Pinus Sumber Jaya');
+        $('#isi').html(
+          'Wisata Alam pesona pohon pinus selama ini hanya dikenal di daerah lain di luar Lampung, seperti pulau Jawa, Sumatera, dan daerah lain, Tapi kini bagi anda yang ingin mencoba berlibur di Wisata Alam Pinusan Lampung Barat ini destinasi yang sangat pas untuk bersama keluarga, teman, kerabat.<br>Jika dari Bandar lampung, butuh waktu perjalanan 4 sampai 5 jam menuju Hutan Pinusan Lampung Barat yang letaknya berada di Pekon Sukapura, Kecamatan Sumber Jaya, Lampung Barat. Tanda alam awal adalah udara semakin sejuk apabila sudah melewati Kota Bukit Kemuning, Lampung Utara.<br>'
+        );
+        document.title = 'Hutan Pinus';
         $('#content-background').css('background-image', 'url(./image/hutan_pinus_lampung_barat.jpg)');
       } else if (id == 9) {
-        $('#judul').html('sembilan');
-        document.title = 'Pantai Kedu Warna'
+        $('#judul').html('Pantai Kedu Warna');
+        $('#isi').html(
+          'Pantai Kedu merupakan salah satu jenis pantai berpasir putih yang halus dan salah satu pantai yang biasa dijelajahi oleh para nelayan. Sudah banyak wisatawan yang mengeksplorasi Pantai Kedu membuat pantai ini menjadi lebih terawat. Lokasi Pantai Kedu sendiri berada di Desa Way Urang, Kec. Kalianda, Kabupaten Lampung Selatan, Provinsi Lampung.<br>Selain keindahan baharinya yang memukau, Pantai Kedu juga terkenal dengan keindahan sunset atau matahari terbenamnya. Ditemani dengan suara deburan ombak yang menghantam hamparan pasir putih bersih, seakan membuat jiwa menjadi semakin tenang dan nyaman.<br>Belum lagi, pemandatangan gunung rajabasa dan krakatau yang membuat Pantai Kedu terlihat semakin eksosis dan menawan. Kemudian, banyak pepohonan juga menambah kesan asri dan sejuk, sehingga pengunjung betah untuk berlama-lama di disini.<br>'
+        );
+        document.title = 'Pantai Kedu Warna';
         $('#content-background').css('background-image', 'url(./image/kedu_warna.jpg)');
       } else if (id == 10) {
-        $('#judul').html('sepuluh');
-        document.title = 'Lembah Hijau'
+        $('#judul').html('Lembah Hijau');
+        $('#isi').html(
+          'Lembah Hijau Lampung adalah salah-satu wisata Lampung yang memadukan berbagai konsep wisata, yang disajikan dalam satu lokasi, atau kawasan yang sama. Lembah Hijau Lampung adalah objek wisata alam, yang dipadukan dengan ragam wahana wisata keluarga, dan wahana kekinian. Lembah Hijau Lampung memiliki luas sekitar 30 ha. Kemudian spot tersebut dibagi menjadi dua bagian, di antaranya Taman Wisata & Taman Satwa<br><br>Lokasi Lembah Hijau Lampung berada tak jauh dari pusat kota Bandar Lampung. Alamat lengkapnya di Jl. Raden Imba Kesuma Ratu, Kelurahan Sukadana Ham, Kec. Tanjung Barat, Kota Bandar Lampung, Lampung.'
+        );
+        document.title = 'Lembah Hijau';
         $('#content-background').css('background-image', 'url(./image/lembahhijau.jpg)');
       } else if (id == 11) {
-        $('#judul').html('sebelas');
-        document.title = 'Menara Siger'
+        $('#judul').html('Menara Siger');
+        $('#isi').html(
+          'Menara Siger yang terletak di Bukit Gamping, Bakauheni, Lampung Selatan, ini memiliki bentuk yang unik dengan sembilan kerucut berwarna kuning keemasan yang berderet memanjang. Bentuk ini mengadaptasi bentuk mahkota pengantin wanita (siger) dalam adat Lampung. Sedangkan, pucuknya yang berjumlah sembilan adalah simbolisasi sembilan bahasa yang ada dalam masyarakat Lampung. Kerucut pada bagian tengah berukuran lebih besar dan lebih tinggi yang menjadi puncak dari menara ini.Arsitektur unik menara ini dibuat oleh Ir. H. Anshori Djausal M.T., arsitek asli Lampung. Konstruksi bangunan dibuat dengan tehnik khusus yang membuatnya tahan guncangan dan terpaan angin. Tehnik yang disebut ferrocement ini adalah sistem konstruksi dengan rangka mirip jejaring laba-laba yang kokoh. Ornamen interior dan eksterior bangunan banyak mengadaptasi bentuk-bentuk dalam motif kain tapis yang juga menjadi ciri khas masyarakat Lampung.'
+        );
+        document.title = 'Menara Siger';
         $('#content-background').css('background-image', 'url(./image/menara_siger.jpg)');
       } else if (id == 12) {
-        $('#judul').html('duabelas');
-        document.title = 'Muncak Teropong Laut'
+        $('#judul').html('Muncak Teropong Laut');
+        $('#isi').html(
+          'Untuk menuju ke Wisata Muncak Teropong Laut, kamu harus menggunakan kendaraan motor ataupun mobil. Tempat ini berlokasi di Desa Muncak, Kecamatan Teluk Pandan, Kabupaten Pesawaran, Lampung. Daerahnya tidak begitu jauh dari Kota Bandar Lampung.Berada di Muncak Tirtayasa atau Muncak Teropong Laut ini kamu akan melihat pemandangan alam yang sangat mempesona. Kamu bisa melihat pemandangan laut biru yang luas sangat membuat hati takjub.<br>Sangat cocok sekali untuk yang hobi berfoto selfie atau menyimpannya untuk berbagi di instagram. Dibelakangnya kamu juga dapat menikmati indahnya pohon-pohon pinus yang tinggi menjulang.<br>'
+        );
+        document.title = 'Muncak Teropong Laut';
         $('#content-background').css('background-image', 'url(./image/Muncak-Teropong-Laut.jpg)');
       }
     </script>
