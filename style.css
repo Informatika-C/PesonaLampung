@@ -12,15 +12,15 @@ html {
 .welcome {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 42%;
+  transform: translate(-42%, -50%);
   text-align: center;
   color: aliceblue;
 }
 .welcome {
   text-align: center;
   color: aliceblue;
-  background: linear-gradient(-45deg, #232dbf, #7f78e1, #ffffff, #e889ad, #6f9a20b5, #484241d0);
+  background: linear-gradient(40deg,  #6f9a20b5, #484241d0, #ffffff, #e889ad, #7f78e1,#232dbf);
   background-size: 300%;
   font-size: 45px;
   letter-spacing: -4px;
@@ -134,7 +134,7 @@ a {
 /* Side Menu */
 
 section {
-  padding-top: 0.3em;
+  padding-top: 3em;
 }
 /*Dropdown Setting*/
 li a,
@@ -186,10 +186,11 @@ body {
 .mySlides {
   display: none;
 }
-img {
+section div div img {
   vertical-align: middle;
+  width: 500px;
+  height: 500px;
 }
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -229,8 +230,11 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -280,14 +284,16 @@ img {
 
 /* Card Image */
 .card-container {
-  background-color: #ffffff;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 20px), repeating-linear-gradient(#31507455, #92b1d5);
+  
   padding: 4em;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2em;
 }
-
+.bg-1{
+  background-color: #ffffff;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 20px), repeating-linear-gradient(#31507455, #92b1d5);
+}
 .card-item {
   height: 19em;
   max-width: 19em;
@@ -477,9 +483,12 @@ p {
 
 .container {
   text-align: center;
-  margin: 200px;
-  height: 300px;
-}
+} 
+
+/*Carousel*/
+
+/*Carousel End*/
+
 /*==========CONTENT==========*/
 .card-center-container {
   display: flex;
@@ -504,6 +513,7 @@ p {
 
 .bg1 {
   position: relative;
+  padding-top: 3em;
   margin: 0;
   padding: 0;
 }
