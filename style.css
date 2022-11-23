@@ -474,6 +474,12 @@ p {
 .maskot:hover p {
   visibility: hidden;
 }
+
+.container {
+  text-align: center;
+  margin: 200px;
+  height: 300px;
+}
 /*==========CONTENT==========*/
 .card-center-container {
   display: flex;
