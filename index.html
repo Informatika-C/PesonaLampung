@@ -39,7 +39,7 @@
   </head>
   <body>
     <div id="vanta">
-      <h1 id="home" class="welcome">SELAMAT DATANG!</h1>
+      <h1 class="welcome">SELAMAT DATANG!</h1>
     </div>
 
     <nav class="sticky">
@@ -97,25 +97,24 @@
     <!-- Mobile End-->
 
     <!--Carousel-->
-    <section style="padding-top: 5em">
-      <h2 style="text-align: center">Pesona Lampung</h2>
+    <section id="home">
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <img src="./image/tegal mas.jpg" style="width: 100%" />
-          <div class="text">Tegal Mas</div>
+          <img src="./image/pulau-pisang-lampung.jpg" />
+          <div class="text"><i>Pulau Pisang</i></div>
         </div>
         <div class="mySlides fade">
-          <img src="./image/pantai-sebalang-kuy.jpg" style="width: 100%" />
-          <div class="text">Pantai Sebalang Kuy</div>
+          <img src="./image/Teluk-Kiluan.jpg" />
+          <div class="text"><i>Teluk Kiluan</i></div>
         </div>
         <div class="mySlides fade">
-          <img src="./image/Pantai_Marina_Kalianda.jpg" style="width: 100%" />
-          <div class="text">Pantai Marina</div>
+          <img src="./image/menara_siger.jpg" />
+          <div class="text"><i>Menara Siger</i></div>
         </div>
         <div class="mySlides fade">
-          <img src="./image/kedu_warna.jpg" style="width: 100%" />
-          <div class="text">Kedu Warna</div>
+          <img src="./image/kedu_warna.jpg" />
+          <div class="text"><i>Kedu Warna</i></div>
         </div>
       </div>
     </section>
@@ -356,7 +355,6 @@
       $(document).ready(function () {
         $(window).bind('scroll', function () {
           $('nav').css('background-color', 'rgba(0, 0, 0, 0.000)');
-          $('a').css('color', 'rgba(0, 0, 01)');
           $('.active').fadeIn('slow', 6000);
           var gap = 100;
           if ($(window).scrollTop() > gap) {
@@ -391,7 +389,7 @@
           slideIndex = 1;
         }
         slides[slideIndex - 1].style.display = 'block';
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
     </script>
     <!-- script -->
