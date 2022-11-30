@@ -7,6 +7,13 @@ html {
   scroll-behavior: smooth;
   font-family: 'Hammersmith One', sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
 
 /*Navbar Setting*/
 .welcome {
@@ -172,14 +179,6 @@ li .dropbox {
 }
 /*Dropdown Setting End*/
 
-/*Content Setting*/
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
 /* Slideshow Container */
 .slideshow-container {
   max-width: 100%;
@@ -311,11 +310,9 @@ p {
 .maskot:hover p {
   visibility: hidden;
 }
-
 .container {
   text-align: center;
 }
-
 /* Card Setting End*/
 
 /* Navbar Phone */
@@ -323,25 +320,22 @@ p {
   display: none;
   gap: 10rem;
 }
-
 .navbar-phone .logo {
   text-align: center;
   width: 100%;
 }
-
 .burger-menu-button {
   padding: 0.1em;
   border-color: rgba(255, 255, 255, 0.44);
   border-width: 0.17em;
   border-radius: 0.3em;
 }
-
 .burger-menu-button:hover {
   cursor: pointer;
 }
-/* Navbar Phone */
+/* Navbar Phone End*/
 
-/*scrollbar*/
+/*Scrollbar*/
 ::-webkit-scrollbar-track {
   border-radius: 2px;
   background-color: #0000;
@@ -354,7 +348,8 @@ p {
   border-radius: 2px;
   background: linear-gradient(45deg, #3371ced0, #ffffff);
 }
-/*scrollbar end*/
+/*Scrollbar End*/
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
@@ -363,14 +358,12 @@ p {
     font-size: 11px;
   }
 }
-
 /* For Tablet: */
 @media only screen and (max-width: 900px) {
   .logo {
     padding-right: 5em;
   }
 }
-
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
   .card-container {
@@ -378,34 +371,27 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
   nav > ul > li {
     display: none;
   }
-
   nav > ul > .dropbox {
     display: none;
   }
-
   nav > ul {
     padding-right: 5em;
     justify-content: left;
   }
-
   .navbar-phone {
     display: flex;
     align-items: center;
     width: 100%;
   }
-
   .navbar-phone li {
     display: block;
   }
-
   .logo {
     padding-right: 0;
   }
-
   h1 {
     font-size: 1em;
   }
@@ -421,12 +407,10 @@ p {
   align-items: center;
   height: 100%;
 }
-
 .card-content {
   width: 90%;
   padding: 2em 2em;
 }
-
 .glass {
   background: rgba(255, 255, 255, 0.593);
   border-radius: 16px;
@@ -435,7 +419,6 @@ p {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .bg1 {
   position: relative;
   padding-top: 3em;
