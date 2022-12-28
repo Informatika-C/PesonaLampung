@@ -232,7 +232,7 @@ h1 {
 .maskot {
   position: relative;
 }
-p {
+h3 {
   text-align: center;
   font-size: 1em;
 }
@@ -314,6 +314,10 @@ p {
   text-align: center;
 }
 /* Card Setting End*/
+
+/*Footer*/
+
+/*Footer End*/
 
 /* Navbar Phone */
 .navbar-phone {
