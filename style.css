@@ -223,11 +223,18 @@ li .dropbox {
 /* Slideshow Container End */
 
 /* Card Setting */
+#recoment {
+  margin: 1em;
+  background-color: rgba(64, 32, 32, 0.861);
+  border-radius: 12px;
+  box-shadow: -5px 7px 5px #12121248;
+}
 .card-container {
-  padding: 4em;
+  padding: 1em;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2em;
+  gap: 1em;
 }
 h1 {
   position: absolute;
@@ -238,16 +245,30 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 .maskot {
-  position: relative;
-}
-h3 {
-  text-align: center;
-  font-size: 1em;
+  display: flex;
+  margin: 2em;
+  padding: 2em;
+  gap: 5em;
 }
 .img {
   display: block;
-  width: 75%;
+  width: 18%;
   height: auto;
+}
+.bg1 {
+  width: 50%;
+  height: auto;
+}
+.overlay {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.maskot:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.maskot:hover h3 {
+  visibility: hidden;
 }
 .card-item {
   height: 19em;
@@ -296,60 +317,40 @@ h3 {
   left: 10px;
   color: white;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-}
-.maskot:hover .overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-.maskot:hover p {
-  visibility: hidden;
-}
+
 /* Card Setting End*/
 
 /* Galery Setting */
 .container {
-  border-color: #0000 solid 2px;
-  background-color: #0000;
+  margin: 1em;
+  background-color: rgba(64, 32, 32, 0.861);
+  border-radius: 12px;
+  box-shadow: -5px 7px 5px #12121248;
 }
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 1em;
+  margin: auto;
 }
-
 .image-gallery > li {
   height: 220px;
   cursor: pointer;
   list-style: none;
   position: relative;
+  flex-grow: 1;
+  flex: auto;
 }
-
-.image-gallery li img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border-radius: 5px;
-}
-
 .image-gallery::after {
   content: '';
   flex-basis: 350px;
 }
-.image-gallery > li {
-  /* ... */
-  position: relative;
-  cursor: pointer;
+.image-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 .overl {
   position: absolute;
@@ -555,8 +556,26 @@ footer a:hover {
 }
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+  .welcome {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+    color: aliceblue;
+  }
+  .mySlides > img {
+    width: 100ch;
+    height: 100vh;
+  }
+  #recoment {
+    margin: 0.5em;
+    border-radius: 10px;
+  }
+  .container {
+    margin: 0.5em;
+  }
   .card-container {
-    padding: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -581,11 +600,20 @@ footer a:hover {
   .logo {
     padding-right: 0;
   }
-  h1 {
+  h2 {
+    text-align: center;
     font-size: 1em;
   }
   .maskot {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+  }
+  .img {
+    width: 75%;
+    height: auto;
   }
 }
 
