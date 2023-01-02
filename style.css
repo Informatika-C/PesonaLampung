@@ -85,10 +85,10 @@ a {
 }
 .active {
   border-radius: 0px 0px 5px 5px;
-  background-color: rgba(206, 195, 195, 0.667);
+  background-color: rgba(32, 19, 19, 0.667);
   backdrop-filter: blur(6px) saturate(90%) contrast(130%);
   -webkit-backdrop-filter: blur(6px) saturate(90%) contrast(130%);
-  box-shadow: rgba(46, 50, 96, 0.4) 3px 5px 6px 2px;
+  box-shadow: rgba(57, 58, 73, 0.4) 3px 5px 6px 2px;
 }
 /*Navbar Setting End*/
 
@@ -100,7 +100,7 @@ a {
   width: 50%;
   font-size: 0.8em;
   height: 100vh;
-  background-color: #dcdcdc55;
+  background-color: #dcdcdc;
   backdrop-filter: blur(5px) saturate(80%) contrast(150%);
   -webkit-backdrop-filter: blur(5px) saturate(80%) contrast(150%);
   z-index: 9999;
@@ -225,9 +225,8 @@ li .dropbox {
 /* Card Setting */
 #recoment {
   margin: 1em;
-  background-color: rgba(64, 32, 32, 0.861);
   border-radius: 12px;
-  box-shadow: -5px 7px 5px #12121248;
+  box-shadow: 1px 1px 3px 3px #0000004c;
 }
 .card-container {
   padding: 1em;
@@ -323,9 +322,8 @@ h2 {
 /* Galery Setting */
 .container {
   margin: 1em;
-  background-color: rgba(64, 32, 32, 0.861);
   border-radius: 12px;
-  box-shadow: -5px 7px 5px #12121248;
+  box-shadow: 1px 1px 3px 3px #0000004c;
 }
 .image-gallery {
   display: flex;
@@ -413,6 +411,13 @@ footer .content .lower .topic {
 footer .content .lower i {
   padding-right: 16px;
 }
+footer .content .uti a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  padding: 2px 40px 5px 0;
+}
 footer .content .middle {
   padding-left: 80px;
 }
@@ -469,14 +474,15 @@ footer .bottom {
   color: rgb(10, 10, 10);
   padding: 0 40px 5px 0;
 }
-footer .bottom a {
-  color: #eb2f06;
+footer .bottom p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0 40px 5px 0;
 }
-footer a {
+footer p {
   transition: all 0.3s ease;
-}
-footer a:hover {
-  color: #eb2f06;
 }
 @media (max-width: 1100px) {
   footer .content .middle {
@@ -520,6 +526,7 @@ footer a:hover {
   border-width: 0.17em;
   border-radius: 0.3em;
 }
+
 .burger-menu-button:hover {
   cursor: pointer;
 }
@@ -569,11 +576,7 @@ footer a:hover {
     height: 100vh;
   }
   #recoment {
-    margin: 0.5em;
     border-radius: 10px;
-  }
-  .container {
-    margin: 0.5em;
   }
   .card-container {
     display: grid;
@@ -586,19 +589,26 @@ footer a:hover {
     display: none;
   }
   nav > ul {
-    padding-right: 5em;
+    padding-right: 3em;
     justify-content: left;
   }
   .navbar-phone {
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-phone .logo {
+    text-align: center;
+    width: 100%;
   }
   .navbar-phone li {
     display: block;
   }
-  .logo {
-    padding-right: 0;
+  nav div li a img {
+    width: 100%;
+    height: 50px;
+    padding-right: 0 auto;
   }
   h2 {
     text-align: center;
