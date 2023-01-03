@@ -13,7 +13,9 @@
       <div class="card-center-container">
         <div class="card-content glass">
           <h1 id="judul" class="bg1" style="font-size: 2em"></h1>
-          <p id="isi" style="text-align: justify"></p>
+          <p id="id" style="text-align: justify"></p>
+          <p id="en" style="text-align: justify"></p>
+          <p id="jpn" style="text-align: justify"></p>
         </div>
       </div>
     </div>
@@ -27,11 +29,11 @@
         <li><a href="index.html#recoment">Rekomendasi</a></li>
         <li><a href="#menu">Galeri</a></li>
         <li class="dropbox">
-          <a href="#menu" class="drophov">IDN</a>
+          <a href="#menu" id="bahasa" class="drophov">IDN</a>
           <div class="dropdown">
-            <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
-            <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
-            <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+            <a href="#" onclick="gantiBahasa('IDN')"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+            <a href="#" onclick="gantiBahasa('ENG')" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+            <a href="#" onclick="gantiBahasa('JPN')" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
           </div>
         </li>
         <li><a href="#">Kontak</a></li>
@@ -99,89 +101,209 @@
 
       if (id == 1) {
         $('#judul').html('Kuil kumbang');
-        $('#isi').html(
+        $('#id').html(
           'Sebuah kuil milik sepasang suami istri bersuku Tionghoa dari Cilegon berada di puncak Bukit Kumbang di Kecamatan Bakauheni Kabupaten Lampung Selatan. Keindahannya mengundang banyak orang untuk berkunjung meskipun kuil tersebut dikelola secara pribadi. Pengunjung harus mendaki dengan medan yang cukup curam karena terletak di puncak bukit. Lelahnya perjalanan akan terbayarkan dengan pemandangan birunya laut dari atas bukit.<br><br>Di sini juga banyak kamu jumpai spot foto untuk kamu jadikan latar belakang berfoto. Berkunjung ke tempat ini gratis, tanpa ada biaya sama sekali, namun dengan begitu kamu wajib menjaga kebersihan dan menghormati peraturan yang ada di sana.<br>'
         );
+        $('#en').html(
+          'A temple owned by a pair of Chinese husband and wife from Cilegon is located at the top of Bukit Kumbang in Bakauheni District, Lampung Selatan Regency. Its beauty invites many people to visit even though the temple is privately managed. Visitors must climb with quite steep terrain because it is located at the top of the hill. The tiredness of the journey will be paid off with the blue sea view from the top of the hill.<br><br>Here you will also find many photo spots for you to use as a background for your photos. Visiting this place is free, without any costs at all, but with that you must maintain cleanliness and respect the rules there.<br>'
+        )
+        $('#jpn').html(
+          'Cilegonからの一対の中国人夫婦が所有する寺院は、Lampung Selatan州のBakauheni地区のBukit Kumbangの頂上に位置しています。その美しさは、寺院がプライベートに管理されているにもかかわらず、多くの人々が訪れることを誘います。訪問者は、ヒルの頂上にあるため、かなり急な地形を登らなければなりません。旅の疲れは、ヒルの頂上からの青い海の景色で償うことになります。<br><br>ここでは、写真の背景に使用できる写真スポットもたくさんあります。この場所に訪問するのは無料で、一切の費用はかかりませんが、そのためには清潔さを維持し、そこにあるルールに敬意を払う必要があります。<br>'
+        )
         document.title = 'Bukit Kumbang';
         $('#content-background').css('background-image', 'url(./image/bukit_kumbang_bakau.png)');
       } else if (id == 2) {
         $('#judul').html('Air Terjun Batu Putu');
-        $('#isi').html(
+        $('#id').html(
           'Air terjun ini berada di Desa Batu Putu, Kecamatan Teluk Betung Utara, Kota Bandar Lampung, Provinsi Lampung. Letaknya tak terlalu jauh dari pusat kota Teluk Betung, kurang lebih hanya memakan waktu 15 menit perjalanan saja, dan kurang lebih 45 menit dari Kota Bandar Lampung.<br>Air Terjun Batu Putu ini sangat cantik dengan udara sejuk serta panorama pegunungan yang tampak alami. Rentetan pepohonan besar nan rimbun menutupi perbukitan hijau di belakangnya mampu membuat siapa pun yang melihatnya terkesima. Suasananya pun menentramkan, hanya sunyi jauh dari hiruk pikuk perkotaan, meskipun letaknya cukup dekat dengan pusat kota. Daya tarik utamanya tentu air terjunnya yang masih alami dan tidak banyak dijamah manusia.'
+        );
+        $('#en').html(
+          'This waterfall is located in Batu Putu Village, North Teluk Betung District, Bandar Lampung City, Lampung Province. Its location is not too far from the center of Teluk Betung city, it only takes about 15 minutes of travel, and about 45 minutes from Bandar Lampung City.<br>Batu Putu Waterfall is very beautiful with cool air and natural mountain views. The dense forest of large trees covering the green hills behind it can make anyone who sees it amazed. Its atmosphere also calms down, only silent far from the hustle and bustle of the city, although its location is quite close to the city center. Its main attraction is certainly the waterfall that is still natural and not much visited by humans.'
+        );
+        $('#jpn').html(
+          'この滝は、ラムパング州のバンダラ・ラムパング市の北テルック・ベトン地区のバツ・プトゥ村に位置しています。その場所は、テルック・ベトン市の中心からはかなり遠くありません。約15分の旅行で、約45分のバンダラ・ラムパング市からです。<br>バツ・プトゥ滝は、涼しい空気と自然な山の景色とともに非常に美しいです。大きな木々の茂った森が、それを見た人を感動させることができる背後の緑の丘を覆っています。その雰囲気も落ち着きます。都会の喧騒から遠く、静かですが、その場所は都心にかなり近いです。主な魅力は、まだ自然で人間によってあまり訪れられていない滝です。'
         );
         document.title = 'Air Terjun Batu Putu';
         $('#content-background').css('background-image', 'url(./image/Air_terjun_Batu_Putu.png)');
       } else if (id == 3) {
         $('#judul').html('Air Terjun Putri Malu');
-        $('#isi').html(
+        $('#id').html(
           'Terletak di Kampung Juku Batu, Kecamatan Banjit, Kabupaten Way Kanan, Provinsi Lampung. Air Terjun Putri Malu memang benar-benar memiliki panorama keindahan alam yang luar biasa, Maka tak heran bahwa air terjun yang memiliki ketinggian sekitar 100 meter diatas permukaan laut ini menjadi salah satu produk wisata unggulan yang di miliki oleh kabupaten waykanan.<br>Tetes air yang jatuh itu, berbentuk melengkung menyerupai punggung manusia yang sedang mandi. Dan hal tersebutlah yang mendasari air terjun ini dinamakan “Putri Malu”. Dari namanya saja pasti sudah jelas terbayang betapa indahnya pesona air terjun yang satu ini. Air Terjun Putri Malu memang benar-benar cantik. Maka tak mengherankan jika banyak wisatawan yang tergila-gila dengan kecantikan air terjun yang satu ini. Ketika mendengar suara deburannya saja sudah segar, apa lagi jika sudah terkena air cipratannya secara langsung.'
+        );
+        $('#en').html(
+          'Located in Kampung Juku Batu, Banjit District, Way Kanan Regency, Lampung Province. Putri Malu Waterfall is indeed a truly extraordinary natural panorama, so it is not surprising that this waterfall with a height of about 100 meters above sea level is one of the flagship tourism products owned by Waykanan Regency.<br>The falling water, in the form of a curved resembling a human back bathing. And that is what makes this waterfall named "Putri Malu". From its name alone it is already clear how beautiful the charm of this waterfall is. Putri Malu Waterfall is indeed beautiful. So it is not surprising that many tourists are crazy about the beauty of this waterfall. When you hear the sound of its roar alone is fresh, what more if you have been directly hit by its spray.'
+        );
+        $('#jpn').html(
+          'ラムパング州ウェー・カナン県バンジット郡カンプング・ジュク・バトゥ村に位置しています。プトリ・マルウ瀑布は、本当に異常な自然の風景を持っているので、この瀑布は海抜100メートルの高さであることから、ウェー・カナン郡が所有する主要な観光産業の1つであることは驚くべきことではありません。<br>落ちる水は、浴びている人間の背中に似た曲線の形をしています。そして、それがこの滝を「プトリ・マルウ」と呼ぶ理由です。その名前からすでにその魅力がどれほど美しいかが明らかになっています。プトリ・マルウ瀑布は本当に美しいです。それゆえ、この滝の美しさに狂っている観光客がたくさんいることは驚くべきことではありません。その咆哮の音を聞いただけですでに清涼感があります。もっと言えば、直接その噴水に当たったらどうでしょうか。'
         );
         document.title = 'Air Terjun Putri Malu';
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Putri-Malu.jpg)');
       } else if (id == 4) {
         $('#judul').html('Air Terjun Way Lalaan');
-        $('#isi').html(
+        $('#id').html(
           'Air Terjun Way Lalaan, Air terjun yang berjarak hanya 8 Km dari Kotaagung, ibukota Kabupaten Tanggamus atau 80 Km atau 1,5 jam perjalanan dari Kota Bandar Lampung.Air Terjun Way Lalaan terletak di kaki Gunung Tanggamus dan merupakan air terjun bertingkat dengan jarak kurang lebih 200 m. Nama Air terjun ini berasal dalam bahasa Lampung dari kata “Way” yang artinya sungai dan Lalaan yang bermuara ke Teluk Semangka. Tumpahan air terjun ini memiliki ketinggian ± 11 m.<br>Air terjun yang di kenal sejak Tahun 1937 yaitu pada zaman pemerintahan Belanda yang ditandai telah membuat sebuah tangga yang terbuat dari semen menuju lembah air terjun. Air terjun Way Lalaan saat ini telah dikelola oleh Dinas Pariwisata Tanggamus. Warga sekitar memberi nama Air Terjun Way Lalaan 1 yang terletak di atas dan Air Terjun Way Lalaan 2 yang terletak bawah.'
+        );
+        $('#en').html(
+          'Way Lalaan Waterfall, Waterfall which is only 8 Km from Kotaagung, the capital of Tanggamus Regency or 80 Km or 1.5 hours drive from Bandar Lampung City. Way Lalaan Waterfall is located at the foot of Mount Tanggamus and is a multilevel waterfall with a distance of approximately 200m. The name of this waterfall comes from the Lampung language from the word "Way" which means river and Lalaan which empties into Semangka Bay. This waterfall spill has a height of ± 11 m. This waterfall has been known since 1937, namely during the Dutch colonial era which was marked as having made a ladder made of cement leading to the waterfall valley. Way Lalaan Waterfall is currently managed by the Tanggamus Tourism Office. The local people named it Way Lalaan Waterfall 1 which is located above and Waterfall Way Lalaan 2 which is located below.'
+        );
+        $('#jpn').html(
+          'ウェイ ララーン滝, タンガムス リージェンシーの首都、コタアグンからわずか 8 キロ、バンダル ランプン市から車で 80 キロまたは 1.5 時間の場所にある滝. ウェイ ララーン滝はタンガムス山のふもとに位置し、距離のあるマルチレベルの滝です。約200m。この滝の名前は、ランプン語で川を意味する「道」と、セマンカ湾に流れ込むララーンに由来します。この滝の流出は高さ ± 11 m. この滝は 1937 年以来知られています。つまり、滝の谷につながるセメント製のはしごを作ったとしてマークされたオランダ植民地時代に知られています。ウェイ ララーン滝は現在、タンガムス観光局によって管理されています。地元の人々は、上にあるWay Lalaan Waterfall 1と下にあるWaterfall Way Lalaan 2と名付けました。'
         );
         document.title = 'Air Terjun Way Lalaan';
         $('#content-background').css('background-image', 'url(./image/Air-Terjun-Way-Lalaan.jpg)');
       } else if (id == 5) {
         $('#judul').html('Bendungan Batu Tegi');
-        $('#isi').html(
+        $('#id').html(
           'Bendungan Batu Tegi terletak di Pekon Batutegi, Kecamatan Air Naningan, Kabupaten Tanggamus, Lampung. Bendungan ini merupakan bendungan terbesar se Asia Tenggara. Memiliki luas sekitar 3.560 hektar bendungan ini juga Berada diantara dua bukit.<br>Bendungan Batu Tegi jaraknya kurang lebih 85 km dari Kota Bandar Lampung. Dari bendungan ini kita dapat melihat hamparan luas air yang menakjubkan. Pemandangan yang disuguhkan membuat penikmatnya berdecak kagum. Udara yang sejuk dan segar juga menambah keindahan tempat ini.<br>'
+        );
+        $('#en').html(
+          'Batu Tegi Dam is located in Batutegi Village, Air Naningan District, Tanggamus Regency, Lampung. This dam is the largest dam in Southeast Asia. With an area of ​​about 3,560 hectares, this dam is also located between two hills. <br> Batu Tegi Dam is about 85 km from Bandar Lampung City. From this dam we can see a vast expanse of amazing water. The scenery served makes the connoisseurs of it decak amazed. Cool and fresh air also adds to the beauty of this place. <br>'
+        );
+        $('#jpn').html(
+          'バツテギダムは、タンガムス リージョン、ランプン州のエア ナニンガン地区、バツテギ村に位置しています。このダムは、東南アジアで最大のダムです。約 3,560 ヘクタールの面積で、このダムは 2 つの丘の間に位置しています。 <br>バツテギダムはバンダル ランプン市から約 85 kmです。このダムからは、素晴らしい水の広大な景観を見ることができます。提供された景観は、それを楽しむ人々を驚かせます。この場所の美しさに加えて、涼しくて新鮮な空気もあります。 <br>'
         );
         document.title = 'Bendungan Batu Tegi';
         $('#content-background').css('background-image', 'url(./image/Bendungan_Batu_Tegi.jpg)');
       } else if (id == 6) {
         $('#judul').html('Air Terjun Gangsa');
-        $('#isi').html(
+        $('#id').html(
           'Curup Gangsa terletak di Kampung Kotaway, Kecamatan Kasui, Kabupaten Way Kanan, Lampung. Air terjun ini menjadi salah satu wisata andalan Way Kanan selain Air Terjun Putri Malu. Dari Bandar Lampung, lokasi wisata ini dapat ditempuh sekitar 4 hingga 5 jam melalui jalan Lintas Sumatera tengah. Lalu masuk lagi ke dalam menyusuri kampung-kampung dan beberapa perkebunan selama satu jam. Untuk melihat pemandangan atau hilir air terjun wisatawan harus menuruni beberapa anak tangga. Sekitar 100 meter dari hilir air terjun, ada area sungai yang dikelilingi batu yang bisa digunakan untuk berenang bersama keluarga.'
+        );
+        $('#en').html(
+          'Curup Gangsa is located in Kotaway Village, Kasui District, Way Kanan Regency, Lampung. This waterfall is one of the mainstays of Way Kanan tourism besides Air Terjun Putri Malu. From Bandar Lampung, this tourist attraction can be reached about 4 to 5 hours through the middle of Sumatra Lintas. Then enter again to explore the villages and some plantations for one hour. To see the scenery or the waterfall tourists must descend some stairs. About 100 meters from the waterfall, there is a river area surrounded by rocks that can be used to swim with the family.'
+        );
+        $('#jpn').html(
+          'クルプ ガンサは、カスイ地区、ウェー カナン リージョン、ランプン州のコタウェイ村に位置しています。この滝は、エア テルジュン プトリ マルの他のウェー カナン観光の主要なものの 1 つです。バンダル ランプンから、この観光地は、サマトラ リンタスを通じて約 4 から 5 時間で到達できます。次に、1 時間の村やいくつかの農園を探検するために再び入ります。観光客は、いくつかの階段を降りなければならない滝の景色を見るために。滝から約 100 メートル、家族と一緒に泳ぐために使用できる岩に囲まれた川のエリアがあります。'
         );
         document.title = 'Air Terjun Gangsa';
         $('#content-background').css('background-image', 'url(./image/curupgangsa.jpg)');
       } else if (id == 7) {
         document.title = 'Danau Ranau';
         $('#judul').html('Danau Ranau');
-        $('#isi').html(
+        $('#id').html(
           'Danau Ranau terletak diperbatasan antara Provinsi Sumatera Selatan dan Provinsi Lampung. Tepatnya diperbatasan antara Kabupaten OKU Selatan dan Kabupaten Lampung Barat. Danau Ranau merupakan danau terbesar kedua di Sumatera, setelah Danau Toba. <br>Danau Ranau merupakan danau tektonik/danau vulkanik. Aliran utama danau berasal dari Sungai Warkuk dan aliran keluar menuju Sungai Selabung, yang merupakan salah satu anak Sungai  Komering. Dari, aliran sungai ini lah sumber utama untuk mengairi Daerah Irigasi Komering yang terletak di Kabupaten OKU Timur Provinsi Sumatera Selatan dan Kabupaten Way Kanan Provinsi Lampung.'
+        );
+        $('#en').html(
+          'Danau Ranau is located at the border between the provinces of South Sumatra and Lampung. Specifically at the border between the districts of OKU South and Lampung Barat. Danau Ranau is the second largest lake in Sumatra, after Danau Toba. <br> Danau Ranau is a tectonic lake / volcanic lake. The main flow of the lake comes from the Warkuk River and the outflow flows to the Selabung River, which is one of the Komering Rivers children. From, the flow of this river is the main source to irrigate the Komering Irrigation Area located in the OKU East District of South Sumatra Province and Way Kanan District of Lampung Province.'
+        );
+        $('#jpn').html(
+          'ダナウ ラナウは、スマトラ セレボン州とランプン州の州境に位置しています。特に、OKU セレボン地区とランプン バルト地区の境界にあります。ダナウ ラナウは、ダナウ トバの次に大きな湖です。 <br>ダナウ ラナウは、テクトニック ダナウ/ヴォルカニック ダナウです。湖の主な流れは、ワルクク川から来ており、アウトフローはセラブン川に流れ、これはコメリング川の子供の 1 つです。から、この川の流れは、南スマトラ州のOKU 東地区とランプン州のウェー カナン地区にあるコメリング灌漑地域を水やりするための主な源です。'
         );
         $('#content-background').css('background-image', 'url(./image/danauranau.jpg)');
       } else if (id == 8) {
         $('#judul').html('Hutan Pinus Sumber Jaya');
-        $('#isi').html(
+        $('#id').html(
           'Wisata Alam pesona pohon pinus selama ini hanya dikenal di daerah lain di luar Lampung, seperti pulau Jawa, Sumatera, dan daerah lain, Tapi kini bagi anda yang ingin mencoba berlibur di Wisata Alam Pinusan Lampung Barat ini destinasi yang sangat pas untuk bersama keluarga, teman, kerabat.<br>Jika dari Bandar lampung, butuh waktu perjalanan 4 sampai 5 jam menuju Hutan Pinusan Lampung Barat yang letaknya berada di Pekon Sukapura, Kecamatan Sumber Jaya, Lampung Barat. Tanda alam awal adalah udara semakin sejuk apabila sudah melewati Kota Bukit Kemuning, Lampung Utara.<br>'
+        );
+        $('#en').html(
+          'Natural tourism of pine trees so far has only been known in other areas outside Lampung, such as Java, Sumatra, and other areas, But now for those of you who want to try a vacation in this Lampung Barat Pinusan Natural Tourism destination is very suitable to be with family, friends, relatives.<br>If from Bandar lampung, it takes 4 to 5 hours to travel to Hutan Pinusan Lampung Barat which is located in Pekon Sukapura, Sumber Jaya District, Lampung Barat. The first sign of nature is the air getting colder when passing through Bukit Kemuning City, North Lampung.<br>'
+        );
+        $('#jpn').html(
+          'ピノスの木の自然観光は、ランプン以外の地域で知られていたが、ジャワ、スマトラ、その他の地域で、しかし、今、家族、友人、親戚と一緒にこのランプン バルト ピノスアン ナチュラル ツアーの目的地は、とても適しています。<br>バンダラ ランプンからの旅行には、4〜5 時間かかります。ランプン バルト ピノスアン ナチュラル ツアーは、スカパラ村、スンバー ジャヤ地区、ランプン バルトに位置しています。自然の最初のサインは、北ランプンのブキット ケムンギン市を通過すると、空気が冷えてきます。<br>'
         );
         document.title = 'Hutan Pinus';
         $('#content-background').css('background-image', 'url(./image/hutan_pinus_lampung_barat.jpg)');
       } else if (id == 9) {
         $('#judul').html('Pantai Kedu Warna');
-        $('#isi').html(
-          'Pantai Kedu merupakan salah satu jenis pantai berpasir putih yang halus dan salah satu pantai yang biasa dijelajahi oleh para nelayan. Sudah banyak wisatawan yang mengeksplorasi Pantai Kedu membuat pantai ini menjadi lebih terawat. Lokasi Pantai Kedu sendiri berada di Desa Way Urang, Kec. Kalianda, Kabupaten Lampung Selatan, Provinsi Lampung.<br>Selain keindahan baharinya yang memukau, Pantai Kedu juga terkenal dengan keindahan sunset atau matahari terbenamnya. Ditemani dengan suara deburan ombak yang menghantam hamparan pasir putih bersih, seakan membuat jiwa menjadi semakin tenang dan nyaman.<br>Belum lagi, pemandatangan gunung rajabasa dan krakatau yang membuat Pantai Kedu terlihat semakin eksosis dan menawan. Kemudian, banyak pepohonan juga menambah kesan asri dan sejuk, sehingga pengunjung betah untuk berlama-lama di disini.<br>'
+        $('#id').html(
+          'Pantai Kedu merupakan salah satu jenis pantai berpasir putih yang halus dan salah satu pantai yang biasa dijelajahi oleh para nelayan. Sudah banyak wisatawan yang mengeksplorasi Pantai Kedu membuat pantai ini menjadi lebih terawat. Lokasi Pantai Kedu sendiri berada di Desa Way Urang, Kec. Kalianda, Kabupaten Lampung Selatan, Provinsi Lampung.<br>Selain keindahan baharinya yang memukau, Pantai Kedu juga terkenal dengan keindahan sunset atau matahari terbenamnya. Ditemani dengan suara deburan ombak yang menghantam hamparan pasir putih bersih, seakan membuat jiwa menjadi semakin tenang dan nyaman.<br>Belum lagi, pemandatangan gunung rajabasa dan krakatau yang membuat Pantai Kedu terlihat semakin eksosis dan menawan. Kemudian, banyak pepohonan juga menambah kesan asri dan sejuk, sehingga pengunjung betah untuk berlama-lama di didni.<br>'
+        );
+        $('#en').html(
+          'Kedu Beach is one of the types of white sand beaches that are smooth and one of the beaches that are usually explored by fishermen. Many tourists have explored Kedu Beach making this beach more well maintained. The location of Kedu Beach itself is located in Way Urang Village, Kalianda District, South Lampung Regency, Lampung Province.<br>Besides the beauty of its beach, Kedu Beach is also famous for its beautiful sunset. Accompanied by the sound of the waves crashing on the clean white sand, it seems to make the soul become calmer and more comfortable.<br>Not to mention, the presence of Mount Rajabasa and Krakatau which makes Kedu Beach look even more exotic and charming. Then, many trees also add to the charming and cool atmosphere, so that visitors are happy to stay for a long time in didni.<br>'
+        );
+        $('#jpn').html(
+          'ケドビーチは、滑らかな白い砂のビーチの一種であり、漁師がよく探検するビーチの一つです。多くの観光客がケドビーチを探検し、このビーチをよりよく維持しています。ケドビーチの場所は、ランプン州南部、ランプン州のカリアンダ地区、ウェイ・ウラン村にあります。<br>ビーチの美しさに加えて、ケドビーチは夕焼けの美しさで有名です。清潔な白い砂の広がりに波が打ち寄せる音とともに、魂がより落ち着き、快適になるように感じます。<br>言うまでもなく、ラジャバサ山とクラカタウの存在は、ケドビーチがさらにエキゾチックで魅力的に見えるようにします。そして、木々が素敵で涼しく感じるので、訪問者は長い時間を過ごすことができます。<br>'
         );
         document.title = 'Pantai Kedu Warna';
         $('#content-background').css('background-image', 'url(./image/kedu_warna.jpg)');
       } else if (id == 10) {
         $('#judul').html('Lembah Hijau');
-        $('#isi').html(
+        $('#id').html(
           'Lembah Hijau Lampung adalah salah-satu wisata Lampung yang memadukan berbagai konsep wisata, yang disajikan dalam satu lokasi, atau kawasan yang sama. Lembah Hijau Lampung adalah objek wisata alam, yang dipadukan dengan ragam wahana wisata keluarga, dan wahana kekinian. Lembah Hijau Lampung memiliki luas sekitar 30 ha. Kemudian spot tersebut dibagi menjadi dua bagian, di antaranya Taman Wisata & Taman Satwa<br><br>Lokasi Lembah Hijau Lampung berada tak jauh dari pusat kota Bandar Lampung. Alamat lengkapnya di Jl. Raden Imba Kesuma Ratu, Kelurahan Sukadana Ham, Kec. Tanjung Barat, Kota Bandar Lampung, Lampung.'
+        );
+        $('#en').html(
+          'Lembah Hijau Lampung is one of the Lampung tourism that combines various tourism concepts, which are presented in one location, or the same area. Lembah Hijau Lampung is a natural tourist attraction, which is combined with a variety of family tourism facilities, and modern facilities. Lembah Hijau Lampung has an area of ​​about 30 ha. Then the spot is divided into two parts, namely the Park & Wildlife Park<br><br>The location of Lembah Hijau Lampung is not far from the center of Bandar Lampung city. The full address is Jl. Raden Imba Kesuma Ratu, Kelurahan Sukadana Ham, Kec. Tanjung Barat, Bandar Lampung City, Lampung.'
+        );
+        $('#jpn').html(
+          'ランプン州の緑の谷は、さまざまな観光コンセプトを組み合わせたランプン州の観光の一つであり、同じ場所または同じエリアに提示されています。ランプン州の緑の谷は、自然の観光地であり、家族観光施設や最新の施設と組み合わせられています。ランプン州の緑の谷は約30haです。その後、そのスポットは2つの部分に分かれています。公園と野生動物公園<br><br>ランプン州の緑の谷の場所は、バンダラ・ランプン市の中心から遠くありません。正式な住所は、Jl. Raden Imba Kesuma Ratu、Kelurahan Sukadana Ham、Kec. Tanjung Barat、バンダラ・ランプン市、ランプン州です。'
         );
         document.title = 'Lembah Hijau';
         $('#content-background').css('background-image', 'url(./image/lembahhijau.jpg)');
       } else if (id == 11) {
         $('#judul').html('Menara Siger');
-        $('#isi').html(
+        $('#id').html(
           'Menara Siger yang terletak di Bukit Gamping, Bakauheni, Lampung Selatan, ini memiliki bentuk yang unik dengan sembilan kerucut berwarna kuning keemasan yang berderet memanjang. Bentuk ini mengadaptasi bentuk mahkota pengantin wanita (siger) dalam adat Lampung. Sedangkan, pucuknya yang berjumlah sembilan adalah simbolisasi sembilan bahasa yang ada dalam masyarakat Lampung. Kerucut pada bagian tengah berukuran lebih besar dan lebih tinggi yang menjadi puncak dari menara ini.Arsitektur unik menara ini dibuat oleh Ir. H. Anshori Djausal M.T., arsitek asli Lampung. Konstruksi bangunan dibuat dengan tehnik khusus yang membuatnya tahan guncangan dan terpaan angin. Tehnik yang disebut ferrocement ini adalah sistem konstruksi dengan rangka mirip jejaring laba-laba yang kokoh. Ornamen interior dan eksterior bangunan banyak mengadaptasi bentuk-bentuk dalam motif kain tapis yang juga menjadi ciri khas masyarakat Lampung.'
+        );
+        $('#en').html(
+          'The Siger Tower located in Gamping Hill, Bakauheni, South Lampung, has a unique shape with nine golden-yellow cones arranged in a row. This shape adapts to the shape of the bride’s crown (siger) in the Lampung customs. Meanwhile, the tip of nine is symbolic of the nine languages ​​that exist in the Lampung community. The cone in the middle is larger and higher, which is the peak of this tower.The unique architecture of this tower was created by Ir. H. Anshori Djausal M.T., the original architect of Lampung. The construction of the building was made with a special technique that makes it resistant to shaking and wind. This technique is called ferrocement, which is a construction system with a spider web-like frame that is sturdy. Interior and exterior building ornaments adapt to many shapes in the motif of the carpet cloth, which is also a characteristic of the Lampung community.'
+        );
+        $('#jpn').html(
+          'シゲルタワーは、バカウヘニ、南ランプン州のガンピングヒルに位置しており、9つの金色の円錐が一列に並んでいる独特の形をしています。この形はランプン州の習慣のブライドの王冠（シゲル）の形に適応しています。一方、9つの先端はランプン州の社会に存在する9つの言語の象徴です。中央の円錐はより大きく、より高く、このタワーのピークです。このタワーの独特なアーキテクチャは、ランプン州の元の建築家であるIr. H. Anshori Djausal M.T.によって作成されました。建物の建設は、揺れや風に耐えるための特別な技術を使用して行われました。この技術は、強固な蜘蛛の巣のようなフレームを持つ建設システムであるferrocementと呼ばれています。建物の内装と外装の装飾は、ランプン州の社会の特徴であるカーペットの布のモチーフに多くの形状を適応しています。'
         );
         document.title = 'Menara Siger';
         $('#content-background').css('background-image', 'url(./image/menara_siger.jpg)');
       } else if (id == 12) {
         $('#judul').html('Muncak Teropong Laut');
-        $('#isi').html(
+        $('#id').html(
           'Untuk menuju ke Wisata Muncak Teropong Laut, kamu harus menggunakan kendaraan motor ataupun mobil. Tempat ini berlokasi di Desa Muncak, Kecamatan Teluk Pandan, Kabupaten Pesawaran, Lampung. Daerahnya tidak begitu jauh dari Kota Bandar Lampung.Berada di Muncak Tirtayasa atau Muncak Teropong Laut ini kamu akan melihat pemandangan alam yang sangat mempesona. Kamu bisa melihat pemandangan laut biru yang luas sangat membuat hati takjub.<br>Sangat cocok sekali untuk yang hobi berfoto selfie atau menyimpannya untuk berbagi di instagram. Dibelakangnya kamu juga dapat menikmati indahnya pohon-pohon pinus yang tinggi menjulang.<br>'
+        );
+        $('#en').html(
+          'To get to the Muncak Teropong Laut Tourism, you must use a motorbike or car. This place is located in Muncak Village, Teluk Pandan District, Pesawaran Regency, Lampung. The area is not too far from the City of Bandar Lampung.<br>Located at Muncak Tirtayasa or Muncak Teropong Laut, you will see a very charming natural landscape. You can see a wide blue sea view that makes your heart amazed.<br>It is very suitable for those who like to take selfies or save them to share on Instagram. Behind you can also enjoy the beauty of tall pine trees.<br>'
+        );
+        $('#jpn').html(
+          'Muncak Teropong Lautの観光に行くには、モーターサイクルまたは車を使用する必要があります。この場所は、ランプン州、ペサワラン県、テルクパンダン区のムンカック村にあります。その地域は、バンダルランプン市から遠くありません。<br>ムンカックティルタヤサまたはムンカックテロポンラウトに位置すると、自然の風景がとても魅力的です。あなたは、あなたの心を感動させる広大な青い海の景色を見ることができます。<br>インスタグラムで共有するために保存するか、自分のセルフィーを撮るのが好きな人にとって非常に適しています。あなたの背後では、高い松の木の美しさを楽しむことができます。<br>'
         );
         document.title = 'Muncak Teropong Laut';
         $('#content-background').css('background-image', 'url(./image/Muncak-Teropong-Laut.jpg)');
       }
+    </script>
+
+    <script>
+      function gantiBahasa(input){
+        let bahasa = document.getElementById('bahasa');
+        bahasa.innerHTML = input;
+        gantiBahasaTampilan();
+      }
+
+      function gantiBahasaTampilan() {
+      // get id en jp class
+      const id = document.getElementsByClassName('id');
+      const en = document.getElementsByClassName('en');
+      const jp = document.getElementsByClassName('jpn');
+
+      const bahasa = document.getElementById('bahasa').innerHTML;
+      switch(bahasa) {
+        case "IDN":
+          // make en and jp id hidden
+          $('#en').hide();
+          $('#jpn').hide();
+          
+          // make id visible
+          $('#id').show();
+          break;
+        case "ENG":
+          // make id and jp hidden
+          $('#id').hide();
+          $('#jpn').hide();
+
+          // make en visible
+          $('#en').show();
+          break;
+        case "JPN":
+          // make id and en hidden
+          $('#id').hide();
+          $('#en').hide();
+
+          // make jp visible
+          $('#jpn').show();
+          break;
+        default:
+      }
+    }
+    </script>
+
+    <script>
+      gantiBahasaTampilan();
     </script>
   </body>
 </html>
