@@ -583,14 +583,14 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) {
   .navbar-phone .logo {
     text-align: center;
-    width: 100%;
+    width: 70%;
     height: auto;
   }
   nav div li a img {
-    width: 150%;
+    width: 450%;
     height: auto;
     padding-right: 0 auto;
   }
@@ -637,14 +637,14 @@ footer p {
   }
   .navbar-phone .logo {
     text-align: center;
-    width: 100%;
+    width: 70%;
     height: auto;
   }
   .navbar-phone li {
     display: block;
   }
   nav div li a img {
-    width: 450%;
+    width: 270%;
     height: auto;
     padding-right: 0 auto;
   }
