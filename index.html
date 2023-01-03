@@ -40,7 +40,9 @@
   </head>
   <body>
     <div id="vanta">
-      <h1 class="welcome">SELAMAT DATANG!</h1>
+      <h1 class="welcome id">SELAMAT DATANG!</h1>
+      <h1 class="welcome en">WELCOME !</h1>
+      <h1 class="welcome jpn">ようこそ！</h1>
     </div>
 
     <nav class="sticky">
@@ -52,11 +54,11 @@
         <li><a href="#recoment">Rekomendasi</a></li>
         <li><a href="#gallery">Galeri</a></li>
         <li class="dropbox">
-          <a href="#menu" class="drophov">IDN</a>
+          <a href="#menu" id="bahasa" class="drophov">IDN</a>
           <div class="dropdown">
-            <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
-            <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
-            <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+            <a onclick="gantiBahasa('IND')" href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+            <a onclick="gantiBahasa('ENG')" href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+            <a onclick="gantiBahasa('JPN')" href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
           </div>
         </li>
         <li><a href="#">Kontak</a></li>
@@ -464,6 +466,85 @@
         slides[slideIndex - 1].style.display = 'block';
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
+    </script>
+    
+    <script>
+      function gantiBahasa(input){
+        let bahasa = document.getElementById('bahasa');
+        bahasa.innerHTML = input;
+        gantiBahasaTampilan();
+      }
+
+      function gantiBahasaTampilan() {
+      // get id en jp class
+      const id = document.getElementsByClassName('id');
+      const en = document.getElementsByClassName('en');
+      const jp = document.getElementsByClassName('jpn');
+
+      const bahasa = document.getElementById('bahasa').innerHTML;
+
+      switch(bahasa) {
+        case "IDN":
+          // make en and jp hidden
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make id visible
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).show();
+          }
+          break;
+        case "ENG":
+          // make id and jp hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make en visible
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).show();
+          }
+          break;
+        case "JPN":
+          // make id and en hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+
+          // make jp visible
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).show();
+          }
+          break;
+        default:
+          // make en and jp hidden
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make id visible
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).show();
+          }
+      }
+    }
+    </script>
+
+    <script>
+      gantiBahasaTampilan();
     </script>
     <!-- script -->
   </body>
