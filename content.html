@@ -25,9 +25,21 @@
         <li class="logo">
           <a href="#"><img src="./image/1.png" alt="Profile" width="100" /></a>
         </li>
-        <li><a href="index.html">Utama</a></li>
-        <li><a href="index.html#recoment">Rekomendasi</a></li>
-        <li><a href="#menu">Galeri</a></li>
+        <li>
+          <a href="index.html" class="id">Utama</a>
+          <a href="index.html" class="en">Home</a>
+          <a href="index.html" class="jpn">ホーム</a>
+        </li>
+        <li>
+          <a href="index.html#recoment" class="id">Rekomendasi</a>
+          <a href="index.html#recoment" class="en">Recomendation</a>
+          <a href="index.html#recoment" class="jpn">おすすめ</a>
+        </li>
+        <li>
+          <a href="#menu" class="id">Galeri</a>
+          <a href="#menu" class="en">Gallery</a>
+          <a href="#menu" class="jpn">ギャラリー</a>
+        </li>
         <li class="dropbox">
           <a href="#menu" id="bahasa" class="drophov">IDN</a>
           <div class="dropdown">
@@ -36,7 +48,11 @@
             <a href="#" onclick="gantiBahasa('JPN')" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
           </div>
         </li>
-        <li><a href="#">Kontak</a></li>
+        <li>
+          <a href="#" class="id">Kontak</a>
+          <a href="#" class="en">Contact</a>
+          <a href="#" class="jpn">連絡先</a>
+        </li>
 
         <!-- Mobile -->
         <div id="home" class="navbar-phone">
@@ -61,11 +77,27 @@
         </div>
       </div>
       <ul class="side-menu-list">
-        <li><a href="#vanta">Utama</a></li>
-        <li><a href="#recoment">Rekomendasi</a></li>
-        <li><a href="#menu">Galeri</a></li>
+        <li>
+          <a href="#vanta" class="id">Utama</a>
+          <a href="#vanta" class="en">Home</a>
+          <a href="#vanta" class="jpn">ホーム</a>
+        </li>
+        <li>
+          <a href="#recoment" class="id">Rekomendasi</a>
+          <a href="#recoment" class="en">Recomendation</a>
+          <a href="#recoment" class="jpn">おすすめ</a>
+        </li>
+        <li>
+          <a href="#menu" class="id">Galeri</a>
+          <a href="#menu" class="en">Gallery</a>
+          <a href="#menu" class="jpn">ギャラリー</a>
+        </li>
         <li><a href="#menu">IDN</a></li>
-        <li><a href="#">Kontak</a></li>
+        <li>
+          <a href="#" class="id">Kontak</a>
+          <a href="#" class="en">Contact</a>
+          <a href="#" class="jpn">連絡先</a>
+        </li>
       </ul>
     </div>
     <!-- Side-Menu -->
@@ -299,6 +331,51 @@
           break;
         default:
       }
+      switch(bahasa) {
+        case "IDN":
+          // make en and jp hidden
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make id visible
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).show();
+          }
+          break;
+        case "ENG":
+          // make id and jp hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make en visible
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).show();
+          }
+          break;
+        case "JPN":
+          // make id and en hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+
+          // make jp visible
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).show();
+          }
+          break;
+        default:
+        }
     }
     </script>
 
