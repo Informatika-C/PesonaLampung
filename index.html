@@ -592,7 +592,7 @@
         // get id en jp class
         const id = document.getElementsByClassName('id');
         const en = document.getElementsByClassName('en');
-        const jp = document.getElementsByClassName('jpn');
+        const jpn = document.getElementsByClassName('jpn');
 
         const bahasa = localStorage.getItem('bhs');
         switch (bahasa) {
@@ -601,8 +601,8 @@
             for (let i = 0; i < en.length; i++) {
               $(en[i]).hide();
             }
-            for (let i = 0; i < jp.length; i++) {
-              $(jp[i]).hide();
+            for (let i = 0; i < jpn.length; i++) {
+              $(jpn[i]).hide();
             }
 
             // make id visible
@@ -612,11 +612,11 @@
             break;
           case 'ENG':
             // make id and jp hidden
-            for (let i = 0; i < id.length; i++) {
-              $(id[i]).hide();
+            for (let i = 0; i < idn.length; i++) {
+              $(idn[i]).hide();
             }
-            for (let i = 0; i < jp.length; i++) {
-              $(jp[i]).hide();
+            for (let i = 0; i < jpn.length; i++) {
+              $(jpn[i]).hide();
             }
 
             // make en visible
@@ -634,8 +634,8 @@
             }
 
             // make jp visible
-            for (let i = 0; i < jp.length; i++) {
-              $(jp[i]).show();
+            for (let i = 0; i < jpn.length; i++) {
+              $(jpn[i]).show();
             }
             break;
           default:
