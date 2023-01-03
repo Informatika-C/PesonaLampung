@@ -6,24 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="./image/bukit_kumbang_bakau.png" as="image" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <title></title>
   </head>
   <body>
-    <div id="content-background">
-      <div class="card-center-container">
-        <div class="card-content glass">
-          <h1 id="judul" class="bg1" style="font-size: 2em"></h1>
-          <p id="id" style="text-align: justify"></p>
-          <p id="en" style="text-align: justify"></p>
-          <p id="jpn" style="text-align: justify"></p>
-        </div>
-      </div>
-    </div>
-
     <nav class="sticky">
-      <ul class="navbar">
+      <ul>
         <li class="logo">
-          <a href="#"><img src="./image/1.png" alt="Profile" width="100" /></a>
+          <img src="./image/1.png" alt="Profile" width="100" />
         </li>
         <li>
           <a href="index.html" class="id">Utama</a>
@@ -36,9 +26,9 @@
           <a href="index.html#recoment" class="jpn">おすすめ</a>
         </li>
         <li>
-          <a href="#menu" class="id">Galeri</a>
-          <a href="#menu" class="en">Gallery</a>
-          <a href="#menu" class="jpn">ギャラリー</a>
+          <a href="index.html#menu" class="id">Galeri</a>
+          <a href="index.html#menu" class="en">Gallery</a>
+          <a href="index.html#menu" class="jpn">ギャラリー</a>
         </li>
         <li class="dropbox">
           <a href="#menu" id="bahasa" class="drophov">IDN</a>
@@ -49,15 +39,15 @@
           </div>
         </li>
         <li>
-          <a href="#" class="id">Kontak</a>
-          <a href="#" class="en">Contact</a>
-          <a href="#" class="jpn">連絡先</a>
+          <a href="#contact" class="id">Kontak</a>
+          <a href="#contact" class="en">Contact</a>
+          <a href="#contact" class="jpn">連絡先</a>
         </li>
 
         <!-- Mobile -->
         <div id="home" class="navbar-phone">
           <li class="logo">
-            <a href="#">Pesona Lampung</a>
+            <a href="https://informatika-c.github.io/PesonaLampung/"><img class="lg" src="./image/1.png" /></a>
           </li>
           <div class="burger-menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
@@ -78,19 +68,19 @@
       </div>
       <ul class="side-menu-list">
         <li>
-          <a href="#vanta" class="id">Utama</a>
-          <a href="#vanta" class="en">Home</a>
-          <a href="#vanta" class="jpn">ホーム</a>
+          <a href="index.html#vanta" class="id">Utama</a>
+          <a href="index.html#vanta" class="en">Home</a>
+          <a href="index.html#vanta" class="jpn">ホーム</a>
         </li>
         <li>
-          <a href="#recoment" class="id">Rekomendasi</a>
-          <a href="#recoment" class="en">Recomendation</a>
-          <a href="#recoment" class="jpn">おすすめ</a>
+          <a href="index.html#recoment" class="id">Rekomendasi</a>
+          <a href="index.html#recoment" class="en">Recomendation</a>
+          <a href="index.html#recoment" class="jpn">おすすめ</a>
         </li>
         <li>
-          <a href="#menu" class="id">Galeri</a>
-          <a href="#menu" class="en">Gallery</a>
-          <a href="#menu" class="jpn">ギャラリー</a>
+          <a href="index.html#gallery" class="id">Galeri</a>
+          <a href="index.html#gallery" class="en">Gallery</a>
+          <a href="index.html#gallery" class="jpn">ギャラリー</a>
         </li>
         <li>
           <a onclick="gantiBahasa('IDN')">IDN</a>
@@ -100,13 +90,26 @@
         </li>
         <li>
           <a onclick="gantiBahasa('JPN')">JPN</a>
+        </li>
+
+        <li></li>
         <li>
-        <li>
-          <a href="#" class="id">Kontak</a>
-          <a href="#" class="en">Contact</a>
-          <a href="#" class="jpn">連絡先</a>
+          <a href="#contact" class="id">Kontak</a>
+          <a href="#contact" class="en">Contact</a>
+          <a href="#contact" class="jpn">連絡先</a>
         </li>
       </ul>
+    </div>
+
+    <div id="content-background">
+      <div class="card-center-container">
+        <div class="card-content glass">
+          <h1 id="judul"></h1>
+          <p id="id"></p>
+          <p id="eng"></p>
+          <p id="jpn"></p>
+        </div>
+      </div>
     </div>
 
     <p id="map">
@@ -184,7 +187,7 @@
     <p>
       <iframe
         class="7"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.5290659491347!2d105.24182671471308!3d-5.48813909602024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40d9b5530237eb%3A0x652fad703dbcdd18!2sMuncak%20Tirtayasa!5e0!3m2!1sid!2sid!4v1672760951264!5m2!1sid!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127211.22989064702!2d103.86894244248867!3d-4.88075972080884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3874bed7238479%3A0xf68831ae9aad721c!2sDanau%20Ranau!5e0!3m2!1sid!2sid!4v1672761293331!5m2!1sid!2sid"
         width="600"
         height="450"
         style="border: 0"
@@ -196,42 +199,6 @@
     <p>
       <iframe
         class="8"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.92974991195!2d105.74524352305035!3d-5.865500682157585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5145028f7488b45%3A0x447d8d74be60c263!2sMenara%20Siger%20Lampung!5e0!3m2!1sid!2sid!4v1672761006724!5m2!1sid!2sid"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </p>
-    <p>
-      <iframe
-        class="9"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.0079020189673!2d105.2285382147128!3d-5.415765096072089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db6d4df733a9%3A0xeaef0ced763a7763!2sLembah%20Hijau!5e0!3m2!1sid!2sid!4v1672761049679!5m2!1sid!2sid"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </p>
-    <p>
-      <iframe
-        class="10"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.848422616818!2d105.56827092607578!3d-5.71859813368433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411031523f7b8d%3A0x6fd203b036857ea1!2sPantai%20KeduWarna!5e0!3m2!1sid!2sid!4v1672761117671!5m2!1sid!2sid"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </p>
-    <p>
-      <iframe
-        class="11"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.7385234846897!2d104.49299021471093!3d-4.983055196382613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e47659668420877%3A0x51e011d31242abde!2sPinus%20Ecopark%20Lampung!5e0!3m2!1sid!2sid!4v1672761258859!5m2!1sid!2sid"
         width="600"
         height="450"
@@ -243,8 +210,44 @@
     </p>
     <p>
       <iframe
+        class="9"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.848422616818!2d105.56827092607578!3d-5.71859813368433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e411031523f7b8d%3A0x6fd203b036857ea1!2sPantai%20KeduWarna!5e0!3m2!1sid!2sid!4v1672761117671!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </p>
+    <p>
+      <iframe
+        class="10"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.0079020189673!2d105.2285382147128!3d-5.415765096072089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db6d4df733a9%3A0xeaef0ced763a7763!2sLembah%20Hijau!5e0!3m2!1sid!2sid!4v1672761049679!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </p>
+    <p>
+      <iframe
+        class="11"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.92974991195!2d105.74524352305035!3d-5.865500682157585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5145028f7488b45%3A0x447d8d74be60c263!2sMenara%20Siger%20Lampung!5e0!3m2!1sid!2sid!4v1672761006724!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </p>
+    <p>
+      <iframe
         class="12"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127211.22989064702!2d103.86894244248867!3d-4.88075972080884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3874bed7238479%3A0xf68831ae9aad721c!2sDanau%20Ranau!5e0!3m2!1sid!2sid!4v1672761293331!5m2!1sid!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.5290659491347!2d105.24182671471308!3d-5.48813909602024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40d9b5530237eb%3A0x652fad703dbcdd18!2sMuncak%20Tirtayasa!5e0!3m2!1sid!2sid!4v1672760951264!5m2!1sid!2sid"
         width="600"
         height="450"
         style="border: 0"
@@ -254,9 +257,69 @@
       ></iframe>
     </p>
     <!-- Side-Menu -->
+
+    <!--Footer-->
+    <footer id="contact">
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">Tentang Kami</div>
+            <p>Pesona Lampung merupakan salah satu rekomendasi website pariwisata yang ada di Lampung.</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Kontak</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>(0721) 702022</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>pesonalpg@gmail.com</a>
+            </div>
+            <div class="uti">
+              <a href=""><img src="./image/LOGO UTI FIX-1.png" alt="UTI" width="25" /> Universitas Teknokrat Indonesia</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Referensi</div>
+          <div><a href="https://kemenparekraf.go.id/direktori/Dinas-Pariwisata">Kementrian Pariwisata dan Ekonomi Kreatif Republik Indonesia.</a></div>
+          <div><a href="https://disparekraf.lampungprov.go.id/">Dinas Pariwisata dan Ekonomi Kreatif Provinsi Lampung.</a></div>
+          <div><a href="https://dispar.bantenprov.go.id/">Dinas Pariwisata Provinsi Banten.</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Pesan</div>
+          <form name="message">
+            <input type="text" name="pesan" placeholder="Tulisan pesan" autocomplete="off" />
+            <button class="kirim" type="submit" name="pesan" value="Send">Kirim</button>
+            <div class="media-icons">
+              <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="404.html"><i class="fab fa-instagram"></i></a>
+              <a href="404.html"><i class="fab fa-youtube"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p style="justify-content: center">Copyright © All rights reserved 2022</p>
+        <a><img src="./image/1.png" alt="pl" width="70" /></a>
+      </div>
+    </footer>
+    <!--Footer End-->
+
     <!-- Mobile -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyJzemdeXd9UG2plvJ5q32ULxQoYaevesjCGxuASYz_pK-V-V3HXb0E4S7Bkzsn_IVj/exec';
+      const form = document.forms['message'];
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then((response) => {
+          console.log('Success!', response);
+        });
+        form.reset().catch((error) => console.error('Error!', error.message));
+      });
+    </script>
     <script>
       $(document).ready(function () {
         $(window).bind('scroll', function () {
@@ -303,10 +366,10 @@
         $('.12').css('display', 'none');
         $('#en').html(
           'A temple owned by a pair of Chinese husband and wife from Cilegon is located at the top of Bukit Kumbang in Bakauheni District, Lampung Selatan Regency. Its beauty invites many people to visit even though the temple is privately managed. Visitors must climb with quite steep terrain because it is located at the top of the hill. The tiredness of the journey will be paid off with the blue sea view from the top of the hill.<br><br>Here you will also find many photo spots for you to use as a background for your photos. Visiting this place is free, without any costs at all, but with that you must maintain cleanliness and respect the rules there.<br>'
-        )
+        );
         $('#jpn').html(
           'Cilegonからの一対の中国人夫婦が所有する寺院は、Lampung Selatan州のBakauheni地区のBukit Kumbangの頂上に位置しています。その美しさは、寺院がプライベートに管理されているにもかかわらず、多くの人々が訪れることを誘います。訪問者は、ヒルの頂上にあるため、かなり急な地形を登らなければなりません。旅の疲れは、ヒルの頂上からの青い海の景色で償うことになります。<br><br>ここでは、写真の背景に使用できる写真スポットもたくさんあります。この場所に訪問するのは無料で、一切の費用はかかりませんが、そのためには清潔さを維持し、そこにあるルールに敬意を払う必要があります。<br>'
-        )
+        );
         document.title = 'Bukit Kumbang';
         $('#content-background').css('background-image', 'url(./image/bukit_kumbang_bakau.png)');
       } else if (id == 2) {
@@ -470,6 +533,18 @@
         $('#jpn').html(
           'ピノスの木の自然観光は、ランプン以外の地域で知られていたが、ジャワ、スマトラ、その他の地域で、しかし、今、家族、友人、親戚と一緒にこのランプン バルト ピノスアン ナチュラル ツアーの目的地は、とても適しています。<br>バンダラ ランプンからの旅行には、4〜5 時間かかります。ランプン バルト ピノスアン ナチュラル ツアーは、スカパラ村、スンバー ジャヤ地区、ランプン バルトに位置しています。自然の最初のサインは、北ランプンのブキット ケムンギン市を通過すると、空気が冷えてきます。<br>'
         );
+        $('.1').css('display', 'none');
+        $('.2').css('display', 'none');
+        $('.3').css('display', 'none');
+        $('.4').css('display', 'none');
+        $('.5').css('display', 'none');
+        $('.6').css('display', 'none');
+        $('.7').css('display', 'none');
+        $('.8').html();
+        $('.9').css('display', 'none');
+        $('.10').css('display', 'none');
+        $('.11').css('display', 'none');
+        $('.12').css('display', 'none');
         document.title = 'Hutan Pinus';
         $('#content-background').css('background-image', 'url(./image/hutan_pinus_lampung_barat.jpg)');
       } else if (id == 9) {
@@ -525,7 +600,7 @@
       } else if (id == 11) {
         $('#judul').html('Menara Siger');
         $('#id').html(
-          'Menara Siger yang terletak di Bukit Gamping, Bakauheni, Lampung Selatan, ini memiliki bentuk yang unik dengan sembilan kerucut berwarna kuning keemasan yang berderet memanjang. Bentuk ini mengadaptasi bentuk mahkota pengantin wanita (siger) dalam adat Lampung. Sedangkan, pucuknya yang berjumlah sembilan adalah simbolisasi sembilan bahasa yang ada dalam masyarakat Lampung. Kerucut pada bagian tengah berukuran lebih besar dan lebih tinggi yang menjadi puncak dari menara ini.Arsitektur unik menara ini dibuat oleh Ir. H. Anshori Djausal M.T., arsitek asli Lampung. Konstruksi bangunan dibuat dengan tehnik khusus yang membuatnya tahan guncangan dan terpaan angin. Tehnik yang disebut ferrocement ini adalah sistem konstruksi dengan rangka mirip jejaring laba-laba yang kokoh. Ornamen interior dan eksterior bangunan banyak mengadaptasi bentuk-bentuk dalam motif kain tapis yang juga menjadi ciri khas masyarakat Lampung.'
+          'Menara Siger yang terletak di Bukit Gamping, Bakauheni, Lampung Selatan, ini memiliki bentuk yang unik dengan sembilan kerucut berwarna kuning keemasan yang berderet memanjang. Bentuk ini mengadaptasi bentuk mahkota pengantin wanita (siger) dalam adat Lampung. Sedangkan, pucuknya yang berjumlah sembilan adalah simbolisasi sembilan bahasa yang ada dalam masyarakat Lampung. Kerucut pada bagian tengah berukuran lebih besar dan lebih tinggi yang menjadi puncak dari menara ini.Arsitektur unik menara ini dibuat oleh Ir. H. Anshori Djausal M.T., arsitek asli Lampung. Konstruksi bangunan dibuat dengan tehnik khusus yang membuatnya tahan guncangan dan terpaan angin. Ornamen interior dan eksterior bangunan banyak mengadaptasi bentuk-bentuk dalam motif kain tapis yang juga menjadi ciri khas masyarakat Lampung.'
         );
         $('.1').css('display', 'none');
         $('.2').css('display', 'none');
@@ -540,7 +615,7 @@
         $('.11').html();
         $('.12').css('display', 'none');
         $('#en').html(
-          'The Siger Tower located in Gamping Hill, Bakauheni, South Lampung, has a unique shape with nine golden-yellow cones arranged in a row. This shape adapts to the shape of the bride’s crown (siger) in the Lampung customs. Meanwhile, the tip of nine is symbolic of the nine languages ​​that exist in the Lampung community. The cone in the middle is larger and higher, which is the peak of this tower.The unique architecture of this tower was created by Ir. H. Anshori Djausal M.T., the original architect of Lampung. The construction of the building was made with a special technique that makes it resistant to shaking and wind. This technique is called ferrocement, which is a construction system with a spider web-like frame that is sturdy. Interior and exterior building ornaments adapt to many shapes in the motif of the carpet cloth, which is also a characteristic of the Lampung community.'
+          'The Siger Tower located in Gamping Hill, Bakauheni, South Lampung, has a unique shape with nine golden-yellow cones arranged in a row. This shape adapts to the shape of the bride’s crown (siger) in the Lampung customs. Meanwhile, the tip of nine is symbolic of the nine languages ​​that exist in the Lampung community. The cone in the middle is larger and higher, which is the peak of this tower.The unique architecture of this tower was created by Ir. H. Anshori Djausal M.T., the original architect of Lampung. The construction of the building was made with a special technique that makes it resistant to shaking and wind. Interior and exterior building ornaments adapt to many shapes in the motif of the carpet cloth, which is also a characteristic of the Lampung community.'
         );
         $('#jpn').html(
           'シゲルタワーは、バカウヘニ、南ランプン州のガンピングヒルに位置しており、9つの金色の円錐が一列に並んでいる独特の形をしています。この形はランプン州の習慣のブライドの王冠（シゲル）の形に適応しています。一方、9つの先端はランプン州の社会に存在する9つの言語の象徴です。中央の円錐はより大きく、より高く、このタワーのピークです。このタワーの独特なアーキテクチャは、ランプン州の元の建築家であるIr. H. Anshori Djausal M.T.によって作成されました。建物の建設は、揺れや風に耐えるための特別な技術を使用して行われました。この技術は、強固な蜘蛛の巣のようなフレームを持つ建設システムであるferrocementと呼ばれています。建物の内装と外装の装飾は、ランプン州の社会の特徴であるカーペットの布のモチーフに多くの形状を適応しています。'
@@ -576,7 +651,7 @@
     </script>
 
     <script>
-      function gantiBahasa(input){
+      function gantiBahasa(input) {
         const storage = localStorage.getItem('bhs');
         localStorage.setItem('bhs', input);
 
@@ -586,89 +661,89 @@
       }
 
       function gantiBahasaTampilan() {
-      // get id en jp class
-      const id = document.getElementsByClassName('id');
-      const en = document.getElementsByClassName('en');
-      const jp = document.getElementsByClassName('jpn');
+        // get id en jp class
+        const id = document.getElementsByClassName('id');
+        const en = document.getElementsByClassName('en');
+        const jp = document.getElementsByClassName('jpn');
 
-      const bahasa = localStorage.getItem('bhs');
-      switch(bahasa) {
-        case "IDN":
-          // make en and jp id hidden
-          $('#en').hide();
-          $('#jpn').hide();
-          
-          // make id visible
-          $('#id').show();
-          break;
-        case "ENG":
-          // make id and jp hidden
-          $('#id').hide();
-          $('#jpn').hide();
+        const bahasa = localStorage.getItem('bhs');
+        switch (bahasa) {
+          case 'IDN':
+            // make en and jp id hidden
+            $('#en').hide();
+            $('#jpn').hide();
 
-          // make en visible
-          $('#en').show();
-          break;
-        case "JPN":
-          // make id and en hidden
-          $('#id').hide();
-          $('#en').hide();
+            // make id visible
+            $('#id').show();
+            break;
+          case 'ENG':
+            // make id and jp hidden
+            $('#id').hide();
+            $('#jpn').hide();
 
-          // make jp visible
-          $('#jpn').show();
-          break;
-        default:
-      }
-      switch(bahasa) {
-        case "IDN":
-          // make en and jp hidden
-          for (let i = 0; i < en.length; i++) {
-            $(en[i]).hide();
-          }
-          for (let i = 0; i < jp.length; i++) {
-            $(jp[i]).hide();
-          }
+            // make en visible
+            $('#en').show();
+            break;
+          case 'JPN':
+            // make id and en hidden
+            $('#id').hide();
+            $('#en').hide();
 
-          // make id visible
-          for (let i = 0; i < id.length; i++) {
-            $(id[i]).show();
-          }
-          break;
-        case "ENG":
-          // make id and jp hidden
-          for (let i = 0; i < id.length; i++) {
-            $(id[i]).hide();
-          }
-          for (let i = 0; i < jp.length; i++) {
-            $(jp[i]).hide();
-          }
-
-          // make en visible
-          for (let i = 0; i < en.length; i++) {
-            $(en[i]).show();
-          }
-          break;
-        case "JPN":
-          // make id and en hidden
-          for (let i = 0; i < id.length; i++) {
-            $(id[i]).hide();
-          }
-          for (let i = 0; i < en.length; i++) {
-            $(en[i]).hide();
-          }
-
-          // make jp visible
-          for (let i = 0; i < jp.length; i++) {
-            $(jp[i]).show();
-          }
-          break;
-        default:
+            // make jp visible
+            $('#jpn').show();
+            break;
+          default:
         }
-    }
+        switch (bahasa) {
+          case 'IDN':
+            // make en and jp hidden
+            for (let i = 0; i < en.length; i++) {
+              $(en[i]).hide();
+            }
+            for (let i = 0; i < jp.length; i++) {
+              $(jp[i]).hide();
+            }
+
+            // make id visible
+            for (let i = 0; i < id.length; i++) {
+              $(id[i]).show();
+            }
+            break;
+          case 'ENG':
+            // make id and jp hidden
+            for (let i = 0; i < id.length; i++) {
+              $(id[i]).hide();
+            }
+            for (let i = 0; i < jp.length; i++) {
+              $(jp[i]).hide();
+            }
+
+            // make en visible
+            for (let i = 0; i < en.length; i++) {
+              $(en[i]).show();
+            }
+            break;
+          case 'JPN':
+            // make id and en hidden
+            for (let i = 0; i < id.length; i++) {
+              $(id[i]).hide();
+            }
+            for (let i = 0; i < en.length; i++) {
+              $(en[i]).hide();
+            }
+
+            // make jp visible
+            for (let i = 0; i < jp.length; i++) {
+              $(jp[i]).show();
+            }
+            break;
+          default:
+        }
+      }
     </script>
 
     <script>
-      if(localStorage.getItem('bhs') == null){
+      if (localStorage.getItem('bhs') == null) {
         localStorage.setItem('bhs', 'IDN');
       }
       gantiBahasa(localStorage.getItem('bhs'));
