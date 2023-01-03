@@ -577,6 +577,9 @@
 
     <script>
       function gantiBahasa(input){
+        const storage = localStorage.getItem('bhs');
+        localStorage.setItem('bhs', input);
+
         let bahasa = document.getElementById('bahasa');
         bahasa.innerHTML = input;
         gantiBahasaTampilan();
@@ -588,7 +591,7 @@
       const en = document.getElementsByClassName('en');
       const jp = document.getElementsByClassName('jpn');
 
-      const bahasa = document.getElementById('bahasa').innerHTML;
+      const bahasa = localStorage.getItem('bhs');
       switch(bahasa) {
         case "IDN":
           // make en and jp id hidden
@@ -665,7 +668,10 @@
     </script>
 
     <script>
-      gantiBahasaTampilan();
+      if(localStorage.getItem('bhs') == null){
+        localStorage.setItem('bhs', 'IDN');
+      }
+      gantiBahasa(localStorage.getItem('bhs'));
     </script>
 
     <script>
