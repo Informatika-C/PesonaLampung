@@ -240,6 +240,11 @@ li .dropbox {
 section {
   padding-block: 3em;
 }
+
+section#recoment {
+  padding-block: 1em;
+}
+
 h1 {
   position: absolute;
   padding-left: 2.5em;
