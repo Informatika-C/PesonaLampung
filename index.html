@@ -40,7 +40,9 @@
   </head>
   <body>
     <div id="vanta">
-      <h1 class="welcome">SELAMAT DATANG!</h1>
+      <h1 class="welcome id">SELAMAT DATANG!</h1>
+      <h1 class="welcome en">WELCOME !</h1>
+      <h1 class="welcome jpn">ようこそ！</h1>
     </div>
 
     <nav class="sticky">
@@ -48,18 +50,34 @@
         <li class="logo">
           <img class="lg" src="./image/1.png" />
         </li>
-        <li><a href="#vanta">Utama</a></li>
-        <li><a href="#recoment">Rekomendasi</a></li>
-        <li><a href="#gallery">Galeri</a></li>
+        <li>
+          <a href="#vanta" class="id">Utama</a>
+          <a href="#vanta" class="en">Home</a>
+          <a href="#vanta" class="jpn">ホーム</a>
+        </li>
+        <li>
+          <a href="#recoment" class="id">Rekomendasi</a>
+          <a href="#recoment" class="en">Recomendation</a>
+          <a href="#recoment" class="jpn">おすすめ</a>
+        </li>
+        <li>
+          <a href="#gallery" class="id">Galeri</a>
+          <a href="#gallery" class="en">Gallery</a>
+          <a href="#gallery" class="jpn">ギャラリー</a>
+        </li>
         <li class="dropbox">
-          <a href="#menu" class="drophov">IDN</a>
+          <a href="#menu" id="bahasa" class="drophov">IDN</a>
           <div class="dropdown">
-            <a href="#"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
-            <a href="#" style="padding-left: 5px"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
-            <a href="#" style="border: none"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+            <a onclick="gantiBahasa('IDN')" style="cursor: pointer;"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
+            <a onclick="gantiBahasa('ENG')" style="padding-left: 5px; cursor: pointer;"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
+            <a onclick="gantiBahasa('JPN')" style="border: none; cursor: pointer;"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
           </div>
         </li>
-        <li><a href="#contact">Kontak</a></li>
+        <li>
+          <a href="#" class="id">Kontak</a>
+          <a href="#" class="en">Contact</a>
+          <a href="#" class="jpn">連絡先</a>
+        </li>
 
         <!-- Mobile -->
         <div id="home" class="navbar-phone">
@@ -84,11 +102,27 @@
         </div>
       </div>
       <ul class="side-menu-list">
-        <li><a href="#vanta">Utama</a></li>
-        <li><a href="#recoment">Rekomendasi</a></li>
-        <li><a href="#gallery">Galeri</a></li>
+        <li>
+          <a href="#vanta" class="id">Utama</a>
+          <a href="#vanta" class="en">Home</a>
+          <a href="#vanta" class="jpn">ホーム</a>
+        </li>
+        <li>
+          <a href="#recoment" class="id">Rekomendasi</a>
+          <a href="#recoment" class="en">Recomendation</a>
+          <a href="#recoment" class="jpn">おすすめ</a>
+        </li>
+        <li>
+          <a href="#gallery" class="id">Galeri</a>
+          <a href="#gallery" class="en">Gallery</a>
+          <a href="#gallery" class="jpn">ギャラリー</a>
+        </li>
         <li><a href="#menu">IDN</a></li>
-        <li><a href="#contact">Kontak</a></li>
+        <li>
+          <a href="#" class="id">Kontak</a>
+          <a href="#" class="en">Contact</a>
+          <a href="#" class="jpn">連絡先</a>
+        </li>
       </ul>
       <li class="logo-list">
         <a href="https://informatika-c.github.io/PesonaLampung/"><img src="./image/1.png" alt="Profile" width="70" /></a>
@@ -101,18 +135,26 @@
     <div class="maskot">
       <div>
         <img class="bg1" src="./image/1.png" alt="bg" />
-        <p>Perkenalkan dia adalah Galang, maskot lucu dengan kain tapisnya dia berasal dari lampung. "Gajah Lampung" adalah kepanjangannya.</p>
+        <p class="id">Perkenalkan dia adalah Galang, maskot lucu dengan kain tapisnya dia berasal dari lampung. "Gajah Lampung" adalah kepanjangannya.</p>
+        <p class="en">Meet Galang, a cute mascot with his blanket. He is from Lampung. "Gajah Lampung" is his full name.</p>
+        <p class="jpn">ガランとは、彼の毛布を持つかわいいマスコットです。彼はラムプンから来ています。 "ガジャー・ラムプン" が彼のフルネームです。</p>
       </div>
       <hr />
       <div class="overlay">
-        <h1>Berikut, REKOMENDASI UNTUKMU!</h1>
+        <h1 class="id">Berikut, REKOMENDASI UNTUKMU!</h1>
+        <h1 class="en">Here, RECOMENDATION FOR YOU!</h1>
+        <h1 class="jpn">ここに、あなたのためのおすすめがあります！</h1>
       </div>
-      <h3>Hai Kawan!!</h3>
+      <h3 class="id">Hai Kawan!!</h3>
+      <h3 class="en">Hi Friends!!</h3>
+      <h3 class="jpn">友達！</h3>
       <img class="img" src="./image/galang-maskot.png" alt="maskot" />
     </div>
     <main class="bg-1">
-      <section>
-        <h2 id="recoment">REKOMENDASI</h2>
+      <h2 class="id">REKOMENDASI</h2>
+      <h2 class="en">RECOMENDATION</h2>
+      <h2 class="jpn">おすすめ</h2>
+      <section id="recoment">
         <!-- Card Image -->
         <div class="card-container">
           <!--start card-item-->
@@ -306,26 +348,44 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <img src="./image/pulau-pisang-lampung.jpg" />
-          <div class="text"><i>Pulau Pisang</i></div>
+          <div class="text">
+            <i class="id">Pulau Pisang</i>
+            <i class="en">Pisang Island</i>
+            <i class="jpn">ピサン島</i>
+          </div>
         </div>
         <div class="mySlides fade">
           <img src="./image/Teluk-Kiluan.jpg" />
-          <div class="text"><i>Teluk Kiluan</i></div>
+          <div class="text">
+            <i class="id">Teluk Kiluan</i>
+            <i class="en">Teluk Kiluan</i>
+            <i class="jpn">キルアン湾</i>
+          </div>
         </div>
         <div class="mySlides fade">
           <img src="./image/menara_siger.jpg" />
-          <div class="text"><i>Menara Siger</i></div>
+          <div class="text">
+            <i class="id">Menara Siger</i>
+            <i class="en">Menara Siger</i>
+            <i class="jpn">シゲルタワー</i>
+          </div>
         </div>
         <div class="mySlides fade">
           <img src="./image/kedu_warna.jpg" />
-          <div class="text"><i>Kedu Warna</i></div>
+          <div class="text">
+            <i class="id">Kedu Warna</i>
+            <i class="en">Kedu Warna</i>
+            <i class="jpn">ケド・ワルナ</i>
+          </div>
         </div>
       </div>
     </section>
     <!--Carousel End-->
 
     <!--Galeri-->
-    <h2 id="gallery">Gallery</h2>
+    <h2 class="id">Gallery</h2>
+    <h2 class="en">Gallery</h2>
+    <h2 class="jpn">ギャラリー</h2>
     <div class="container">
       <!-- heading text -->
       <ul class="image-gallery">
@@ -374,11 +434,17 @@
       <div class="content">
         <div class="left box">
           <div class="upper">
-            <div class="topic">Tentang Kami</div>
-            <p>Pesona Lampung merupakan salah satu rekomendasi website pariwisata yang ada di Lampung.</p>
+            <div class="topic id">Tentang Kami</div>
+            <div class="topic en">About Us</div>
+            <div class="topic jpn">私たちについて</div>
+            <p class="id">Pesona Lampung merupakan salah satu rekomendasi website pariwisata yang ada di Lampung.</p>
+            <p class="en">Pesona Lampung is one of the recommended tourism websites in Lampung.</p>
+            <p class="jpn">Pesona Lampungは、ランプンにある観光サイトの1つです。</p>
           </div>
           <div class="lower">
-            <div class="topic">Kontak</div>
+            <div class="topic id">Kontak</div>
+            <div class="topic en">Contact</div>
+            <div class="topic jpn">連絡先</div>
             <div class="phone">
               <a href="#"><i class="fas fa-phone-volume"></i>(0721) 702022</a>
             </div>
@@ -391,15 +457,39 @@
           </div>
         </div>
         <div class="middle box">
-          <div class="topic">Referensi</div>
-          <div><a href="https://kemenparekraf.go.id/direktori/Dinas-Pariwisata">Kementrian Pariwisata dan Ekonomi Kreatif Republik Indonesia.</a></div>
-          <div><a href="https://disparekraf.lampungprov.go.id/">Dinas Pariwisata dan Ekonomi Kreatif Provinsi Lampung.</a></div>
-          <div><a href="https://dispar.bantenprov.go.id/">Dinas Pariwisata Provinsi Banten.</a></div>
+          <div class="topic id">Referensi</div>
+          <div class="topic en">Reference</div>
+          <div class="topic jpn">参照</div>
+          <div>
+            <a href="https://kemenparekraf.go.id/direktori/Dinas-Pariwisata">
+              <div class="id">Kementrian Pariwisata dan Ekonomi Kreatif Republik Indonesia.</div>
+              <div class="en">Ministry of Tourism and Creative Economy of the Republic of Indonesia.</div>
+              <div class="jpn">インドネシア共和国の観光省とクリエイティブ経済省。</div>
+            </a>
+          </div>
+          <div>
+            <a href="https://disparekraf.lampungprov.go.id/">
+              <div class="id">Dinas Pariwisata dan Ekonomi Kreatif Provinsi Lampung.</div>
+              <div class="en">Lampung Province Tourism and Creative Economy Office.</div>
+              <div class="jpn">ランプン州観光省とクリエイティブ経済省。</div>
+            </a>
+          </div>
+          <div>
+            <a href="https://dispar.bantenprov.go.id/">
+              <div class="id">Dinas Pariwisata Provinsi Banten.</div>
+              <div class="en">Banten Province Tourism Office.</div>
+              <div class="jpn">バンテン州観光省。</div>
+            </a>
+          </div>
         </div>
         <div class="right box">
-          <div class="topic">Pesan</div>
+          <div class="topic id">Pesan</div>
+          <div class="topic en">Message</div>
+          <div class="topic jpn">メッセージ</div>
           <form action="#">
-            <input type="text" placeholder="Tulisan pesan" />
+            <input type="text" class="id" placeholder="Tulisan pesan" />
+            <input type="text" class="en" placeholder="Message" />
+            <input type="text" class="jpn" placeholder="メッセージ" />
             <input type="submit" name="" value="Send" />
             <div class="media-icons">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -465,6 +555,72 @@
         slides[slideIndex - 1].style.display = 'block';
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
+    </script>
+    
+    <script>
+      function gantiBahasa(input){
+        let bahasa = document.getElementById('bahasa');
+        bahasa.innerHTML = input;
+        gantiBahasaTampilan();
+      }
+
+      function gantiBahasaTampilan() {
+      // get id en jp class
+      const id = document.getElementsByClassName('id');
+      const en = document.getElementsByClassName('en');
+      const jp = document.getElementsByClassName('jpn');
+
+      const bahasa = document.getElementById('bahasa').innerHTML;
+      switch(bahasa) {
+        case "IDN":
+          // make en and jp hidden
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make id visible
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).show();
+          }
+          break;
+        case "ENG":
+          // make id and jp hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).hide();
+          }
+
+          // make en visible
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).show();
+          }
+          break;
+        case "JPN":
+          // make id and en hidden
+          for (let i = 0; i < id.length; i++) {
+            $(id[i]).hide();
+          }
+          for (let i = 0; i < en.length; i++) {
+            $(en[i]).hide();
+          }
+
+          // make jp visible
+          for (let i = 0; i < jp.length; i++) {
+            $(jp[i]).show();
+          }
+          break;
+        default:
+      }
+    }
+    </script>
+
+    <script>
+      gantiBahasaTampilan();
     </script>
     <!-- script -->
   </body>
