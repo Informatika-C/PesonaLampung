@@ -44,6 +44,10 @@ nav > ul > li > img {
   -webkit-animation: animated_text 6s ease-in-out infinite;
 }
 
+.id,.en,.jpn{
+  display: none;
+}
+
 @keyframes animated_text {
   0% {
     background-position: 0px 50%;
