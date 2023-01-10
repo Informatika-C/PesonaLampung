@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="./image/bg-3.jpg" as="image" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Pesona Lampung</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -39,14 +41,14 @@
     </script>
   </head>
   <body>
-    <div id="vanta">
+    <div id="vanta" data-aos="zoom-out" data-aos-delay="3" data-aos-duration="1400">
       <h1 class="welcome id">SELAMAT DATANG!</h1>
       <h1 class="welcome en">WELCOME !</h1>
       <h1 class="welcome jpn">ようこそ！</h1>
     </div>
 
     <nav class="sticky">
-      <ul>
+      <ul data-aos="fade-left" data-aos-delay="5" data-aos-duration="2200">
         <li class="logo">
           <a href="https://informatika-c.github.io/PesonaLampung/"><img src="./image/1.png" alt="Profile" width="70" /></a>
         </li>
@@ -68,9 +70,9 @@
         <li class="dropbox">
           <a href="#menu" id="bahasa" class="drophov">IDN</a>
           <div class="dropdown">
-            <a onclick="gantiBahasa('IDN')" style="cursor: pointer"> <img src="./image/f-idn.png" alt="flag" width="30" />IDN</a>
-            <a onclick="gantiBahasa('ENG')" style="padding-left: 5px; cursor: pointer"> <img src="./image/f-eng.png" alt="flag" width="20" /> ENG</a>
-            <a onclick="gantiBahasa('JPN')" style="border: none; cursor: pointer"> <img src="./image/f-jpn.png" alt="flag" width="34" />JPN</a>
+            <a onclick="gantiBahasa('IDN')" style="cursor: pointer"> <img src="./image/f-idn.png" alt="flag" width="30" data-aos="fade-left" />IDN</a>
+            <a onclick="gantiBahasa('ENG')" style="padding-left: 5px; cursor: pointer"> <img src="./image/f-eng.png" alt="flag" width="20" data-aos="fade-left" /> ENG</a>
+            <a onclick="gantiBahasa('JPN')" style="border: none; cursor: pointer"> <img src="./image/f-jpn.png" alt="flag" width="34" data-aos="fade-left" />JPN</a>
           </div>
         </li>
         <li>
@@ -80,7 +82,7 @@
         </li>
 
         <!-- Mobile -->
-        <div id="home" class="navbar-phone">
+        <div id="home" class="navbar-phone" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2200">
           <li class="logo">
             <a href="https://informatika-c.github.io/PesonaLampung/"><img src="./image/1.png" alt="Profile" width="70" /></a>
           </li>
@@ -101,7 +103,7 @@
           </svg>
         </div>
       </div>
-      <ul class="side-menu-list">
+      <ul class="side-menu-list" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2200">
         <li>
           <a href="#vanta" class="id">Utama</a>
           <a href="#vanta" class="en">Home</a>
@@ -128,9 +130,9 @@
         </li>
 
         <li>
-          <a href="#contact" class="id">Kontak</a>
-          <a href="#contact" class="en">Contact</a>
-          <a href="#contact" class="jpn">連絡先</a>
+          <a href="#contact" class="id" data-aos="fade-left">Kontak</a>
+          <a href="#contact" class="en" data-aos="fade-left">Contact</a>
+          <a href="#contact" class="jpn" data-aos="fade-left">連絡先</a>
         </li>
       </ul>
       <li class="logo-list">
@@ -142,7 +144,7 @@
 
     <!--Content-->
     <div class="maskot">
-      <div>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-delay="1" data-aos-duration="500">
         <img class="bg1" src="./image/1.png" alt="bg" />
         <p class="id">Perkenalkan dia adalah Galang, maskot lucu dengan kain tapisnya dia berasal dari lampung. "Gajah Lampung" adalah kepanjangannya.</p>
         <p class="en">Meet Galang, a cute mascot with his blanket. He is from Lampung. "Gajah Lampung" is his full name.</p>
@@ -154,20 +156,20 @@
         <h1 class="en">Here, RECOMENDATION FOR YOU!</h1>
         <h1 class="jpn">ここに、あなたのためのおすすめがあります！</h1>
       </div>
-      <h3 class="id">Hai Kawan!!</h3>
-      <h3 class="en">Hi Friends!!</h3>
-      <h3 class="jpn">友達！</h3>
-      <img class="img" src="./image/galang-maskot.png" alt="maskot" />
+      <h3 class="id" data-aos="fade-left" data-aos-delay="10" data-aos-duration="700">Hai Kawan!!</h3>
+      <h3 class="en" data-aos="fade-left" data-aos-delay="10" data-aos-duration="700">Hi Friends!!</h3>
+      <h3 class="jpn" data-aos="fade-down" data-aos-delay="10" data-aos-duration="700">友達！</h3>
+      <img class="img" src="./image/galang-maskot.png" alt="maskot" data-aos="fade-left" data-aos-delay="10" data-aos-duration="700" />
     </div>
     <main class="bg-1">
       <section id="recoment">
-        <h2 id="recoment" class="id">REKOMENDASI</h2>
-        <h2 id="recoment" class="en">RECOMENDATION</h2>
-        <h2 id="recoment" class="jpn">おすすめ</h2>
+        <h2 id="recoment" class="id" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">REKOMENDASI</h2>
+        <h2 id="recoment" class="en" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">RECOMENDATION</h2>
+        <h2 id="recoment" class="jpn" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">おすすめ</h2>
         <!-- Card Image -->
         <div class="card-container">
           <!--start card-item-->
-          <a href="content.html?id=1">
+          <a href="content.html?id=1" data-aos="fade-right" data-aos-delay="5" data-aos-duration="1600">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -182,7 +184,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=2">
+          <a href="content.html?id=2" data-aos="fade-down" data-aos-0ffset="300" data-aos-delay="3" data-aos-duration="1000">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -197,7 +199,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=3">
+          <a href="content.html?id=3" data-aos="fade-left" data-aos-delay="5" data-aos-duration="1800">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -212,7 +214,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=4">
+          <a href="content.html?id=4" data-aos="fade-down" data-aos-0ffset="300" data-aos-delay="3" data-aos-duration="1000">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -227,7 +229,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=5">
+          <a href="content.html?id=5" data-aos="fade-left" data-aos-delay="2" data-aos-duration="1400">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -242,7 +244,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=6">
+          <a href="content.html?id=6" data-aos="fade-left" data-aos-delay="5" data-aos-duration="2500">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -256,7 +258,7 @@
             </div>
           </a>
           <!-- end card-item -->
-          <a href="content.html?id=7">
+          <a href="content.html?id=7" data-aos="fade-right" data-aos-delay="4" data-aos-duration="2000">
             <!-- start card-item -->
             <div class="card-item" id="pantai">
               <div class="top-shadow">
@@ -272,7 +274,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=8">
+          <a href="content.html?id=8" data-aos="fade-right" data-aos-delay="2" data-aos-duration="1400">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -287,7 +289,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=9">
+          <a href="content.html?id=9" data-aos="fade-right" data-aos-delay="2" data-aos-duration="1300">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -302,7 +304,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=10">
+          <a href="content.html?id=10" data-aos="fade-up" data-aos-0ffset="300" data-aos-delay="3" data-aos-duration="1000">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -317,7 +319,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=11">
+          <a href="content.html?id=11" data-aos="fade-left" data-aos-delay="5" data-aos-duration="1800">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -332,7 +334,7 @@
           </a>
           <!-- end card-item -->
           <!-- start card-item -->
-          <a href="content.html?id=12">
+          <a href="content.html?id=12" data-aos="fade-up" data-aos-0ffset="300" data-aos-delay="3" data-aos-duration="1000">
             <div class="card-item" id="pantai">
               <div class="top-shadow">
                 <div class="bottom-shadow">
@@ -352,7 +354,7 @@
     <!-- Card Image -->
 
     <!--Carousel-->
-    <section>
+    <section data-aos="zoom-out" data-aos-delay="3" data-aos-duration="1400">
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -392,46 +394,46 @@
     <!--Carousel End-->
 
     <!--Galeri-->
-    <h2 class="id">GALLERY</h2>
-    <h2 class="en">GALLERY</h2>
-    <h2 class="jpn">ギャラリー</h2>
     <section id="gallery">
+      <h2 id="gallery" class="id" class="id" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">GALLERY</h2>
+      <h2 id="gallery" class="en" class="id" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">GALLERY</h2>
+      <h2 id="gallery" class="jpn" class="id" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">ギャラリー</h2>
+      <!-- heading text -->
       <div class="container">
-        <!-- heading text -->
         <ul class="image-gallery">
-          <li>
+          <li data-aos="fade-down" data-aos-delay="3" data-aos-duration="1000">
             <img src="./image/pulau-pisang-lampung.jpg" alt="Galeri 1" />
             <div class="overl"><span>Pulau Pisang, Lampung Barat</span></div>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="4" data-aos-duration="1300">
             <img src="./image/waykamba.jpg" alt="Galeri 2" />
             <div class="overl"><span>Way Kambas, Lampung Timur</span></div>
           </li>
-          <li>
+          <li data-aos="fade-down" data-aos-delay="5" data-aos-duration="1800">
             <img src="./image/bukit_kumbang_bakau.png" alt="Galeri 5" />
             <div class="overl"><span>Bukit Kumbang, Bakauheni</span></div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="5" data-aos-duration="1800">
             <img src="./image/curupgangsa.jpg" alt="Galeri 4" />
             <div class="overl"><span>Curup Gangsa, Way Kanan</span></div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="4" data-aos-duration="1300">
             <img src="./image/pulau-mengkudu.jpg" alt="Galeri 6" />
             <div class="overl"><span>Pulau Mengkudu, Lampung Selatan</span></div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="3" data-aos-duration="1000">
             <img src="./image/pahawang.jpg" alt="Galeri 6" />
             <div class="overl"><span>Pahawang, Pesawaran</span></div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-delay="5" data-aos-duration="2800">
             <img src="./image/lembahhijau.jpg" alt="Galeri 6" />
             <div class="overl"><span>Lembah Hijau, Tanjung Karang Barat</span></div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-delay="4" data-aos-duration="2300">
             <img src="./image/wira garden.jpg" alt="Galeri 6" />
             <div class="overl"><span>Wira Garden, Bandar Lampung</span></div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-delay="3" data-aos-duration="1500">
             <img src="./image/hutan_pinus_lampung_barat.jpg" alt="Galeri 3" />
             <div class="overl"><span>Hutan Pinus, Lampung Barat</span></div>
           </li>
@@ -551,6 +553,12 @@
         });
       });
     </script>
+    <!--Load-->
+    <script>
+      AOS.init({});
+    </script>
+    <!--Load End-->
+
     <script>
       $('.burger-menu-button').click(function () {
         $('.side-menu').toggleClass('active-side-menu');
