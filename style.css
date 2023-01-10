@@ -44,9 +44,7 @@ nav > ul > li > img {
   -webkit-animation: animated_text 6s ease-in-out infinite;
 }
 
-.id,
-.en,
-.jpn {
+.id,.en,.jpn{
   display: none;
 }
 
@@ -395,13 +393,17 @@ h2 {
 /*Footer*/
 footer {
   width: 100%;
+  bottom: 0;
+  left: 0;
   border-radius: 1em 1em 0 0;
   background: rgb(207, 205, 205);
 }
 footer .content {
+  max-width: 1350px;
   margin: auto;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 footer .content p,
@@ -409,7 +411,7 @@ a {
   color: rgb(10, 10, 10);
 }
 footer .content .box {
-  width: 100%;
+  width: 33%;
   transition: all 0.4s ease;
 }
 footer .content .topic {
